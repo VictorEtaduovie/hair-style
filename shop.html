@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Shop premium wigs and luxury hair from LUXE Hair."
+    />
+
+    <meta name="theme-color" content="#f7f4ef" />
+
+    <title>Shop — LUXE Hair</title>
+
+    <!-- =====================================================
+         FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+    ====================================================== -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- =====================================================
+         MAIN STYLESHEET
+    ====================================================== -->
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="shop-page">
+    <!-- =====================================================
+         ANNOUNCEMENT BAR
+    ====================================================== -->
+
+    <div class="home-announcement">
+      <div class="container">
+        <p class="home-announcement__text">
+          Complimentary delivery on orders above ₦150,000
+
+          <span class="home-announcement__separator"> · </span>
+
+          WhatsApp concierge available
+        </p>
+      </div>
+    </div>
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="site-header">
+      <div class="container">
+        <nav class="site-navbar navbar navbar-expand-lg">
+          <!-- BRAND -->
+
+          <a href="index.html" class="site-brand" aria-label="LUXE Hair Home">
+            <span class="site-brand__main"> LUXE </span>
+
+            <span class="site-brand__sub"> HAIR </span>
+
+            <small class="site-brand__caption"> Luxury wigs · Lagos </small>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="site-navbar__toggle navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#shopNavigation"
+            aria-controls="shopNavigation"
+            aria-expanded="false"
+            aria-label="Open navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+
+          <!-- NAVIGATION -->
+
+          <div class="collapse navbar-collapse" id="shopNavigation">
+            <ul class="site-navbar__links navbar-nav mx-auto">
+              <li class="nav-item">
+                <a
+                  href="shop.html"
+                  class="site-navbar__link"
+                  style="color: var(--site-ink)"
+                >
+                  Shop
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="collections.html" class="site-navbar__link">
+                  Collections
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="best-sellers.html" class="site-navbar__link">
+                  Best Sellers
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="story.html" class="site-navbar__link"> Our Story </a>
+              </li>
+            </ul>
+
+            <!-- NAV ACTIONS -->
+
+            <div class="site-navbar__actions">
+              <button
+                type="button"
+                class="site-navbar__icon"
+                id="shopSearchTrigger"
+                aria-label="Search products"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+
+              <button
+                type="button"
+                class="site-navbar__icon"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#siteCartDrawer"
+                aria-label="Open shopping bag"
+              >
+                <i class="bi bi-bag"></i>
+
+                <span id="siteCartCount" class="site-navbar__cart-count">
+                  0
+                </span>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- =====================================================
+         SHOP HERO
+    ====================================================== -->
+
+    <section class="shop-page__hero">
+      <div class="container">
+        <div class="shop-page__hero-content" data-reveal>
+          <span class="shop-page__eyebrow"> THE LUXE EDIT </span>
+
+          <h1 class="shop-page__title">
+            Find your next
+            <em>signature</em>
+            look.
+          </h1>
+
+          <p class="shop-page__description">
+            Explore our complete edit of refined textures, flattering lengths
+            and timeless silhouettes, selected for effortless beauty and
+            everyday confidence.
+          </p>
+
+          <div class="shop-page__hero-meta">
+            <span class="shop-page__product-count">
+              <span id="shopProductCount"> 0 </span>
+
+              styles available
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SEARCH + FILTERS
+    ====================================================== -->
+
+    <section class="shop-page__controls">
+      <div class="container">
+        <div class="shop-page__controls-inner">
+          <!-- SEARCH -->
+
+          <div class="shop-page__search">
+            <i class="bi bi-search"></i>
+
+            <input
+              type="search"
+              id="shopSearch"
+              placeholder="Search styles, textures or lengths..."
+              autocomplete="off"
+              aria-label="Search wigs"
+            />
+          </div>
+
+          <!-- FILTERS -->
+
+          <div class="shop-page__filters" id="shopFilters">
+            <button
+              type="button"
+              class="shop-page__filter is-active"
+              data-shop-filter="all"
+            >
+              All
+            </button>
+
+            <button
+              type="button"
+              class="shop-page__filter"
+              data-shop-filter="Straight"
+            >
+              Straight
+            </button>
+
+            <button
+              type="button"
+              class="shop-page__filter"
+              data-shop-filter="Body Wave"
+            >
+              Body Wave
+            </button>
+
+            <button
+              type="button"
+              class="shop-page__filter"
+              data-shop-filter="Curly"
+            >
+              Curly
+            </button>
+
+            <button
+              type="button"
+              class="shop-page__filter"
+              data-shop-filter="Bob"
+            >
+              Bobs
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         PRODUCTS
+    ====================================================== -->
+
+    <main class="shop-page__products">
+      <div class="container">
+        <!-- PRODUCTS HEADER -->
+
+        <div class="shop-page__products-top" data-reveal>
+          <div>
+            <span class="home-kicker"> THE COLLECTION </span>
+
+            <h2 class="shop-page__products-heading">Made to be noticed.</h2>
+          </div>
+
+          <span class="shop-page__products-note" id="shopResultText">
+            Showing all styles
+          </span>
+        </div>
+
+        <!-- PRODUCT GRID -->
+
+        <div class="shop-page__grid" id="shopProductGrid"></div>
+
+        <!-- EMPTY STATE -->
+
+        <div class="shop-page__empty d-none" id="shopEmptyState">
+          <div class="shop-page__empty-icon">
+            <i class="bi bi-search"></i>
+          </div>
+
+          <h2 class="shop-page__empty-title">Nothing quite matched.</h2>
+
+          <p class="shop-page__empty-text">
+            Try another style, texture or length.
+          </p>
+
+          <button
+            type="button"
+            class="home-button home-button--dark"
+            id="shopReset"
+          >
+            View all styles
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__top">
+          <div class="site-footer__brand">
+            <a href="index.html" class="site-brand site-brand--footer">
+              <span class="site-brand__main"> LUXE </span>
+
+              <span class="site-brand__sub"> HAIR </span>
+
+              <small class="site-brand__caption"> Luxury wigs · Lagos </small>
+            </a>
+
+            <p>Beautiful hair. Beautifully selected.</p>
+          </div>
+
+          <div class="site-footer__links">
+            <a href="shop.html"> Shop </a>
+
+            <a href="collections.html"> Collections </a>
+
+            <a href="best-sellers.html"> Best Sellers </a>
+
+            <a href="story.html"> Our Story </a>
+          </div>
+
+          <div class="site-footer__contact">
+            <span> Concierge </span>
+
+            <a href="https://wa.me/2348000000000">
+              <i class="bi bi-whatsapp"></i>
+
+              WhatsApp us
+            </a>
+          </div>
+        </div>
+
+        <div class="site-footer__bottom">
+          <span> © 2026 LUXE Hair. All rights reserved. </span>
+
+          <span> Crafted for confidence. </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+         SHARED CART DRAWER
+    ====================================================== -->
+
+    <div
+      class="offcanvas offcanvas-end site-cart"
+      tabindex="-1"
+      id="siteCartDrawer"
+      aria-labelledby="shopCartTitle"
+    >
+      <div class="site-cart__header">
+        <div>
+          <span class="site-cart__eyebrow"> YOUR SELECTION </span>
+
+          <h2 id="shopCartTitle">Shopping Bag</h2>
+        </div>
+
+        <button
+          type="button"
+          class="site-cart__close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close shopping bag"
+        >
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <div class="site-cart__body">
+        <!-- EMPTY -->
+
+        <div id="siteCartEmpty" class="site-cart__empty">
+          <div class="site-cart__empty-icon">
+            <i class="bi bi-bag"></i>
+          </div>
+
+          <h3>Your bag is empty</h3>
+
+          <p>Add something beautiful to your selection.</p>
+
+          <button
+            type="button"
+            class="home-button home-button--dark"
+            data-bs-dismiss="offcanvas"
+          >
+            Continue shopping
+          </button>
+        </div>
+
+        <!-- ITEMS -->
+
+        <div id="siteCartItems" class="site-cart__items"></div>
+      </div>
+
+      <!-- CART FOOTER -->
+
+      <div id="siteCartFooter" class="site-cart__footer"></div>
+    </div>
+
+    <!-- =====================================================
+         SHOP QUICK VIEW
+    ====================================================== -->
+
+    <div
+      class="modal fade"
+      id="shopQuickViewModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content shop-page__modal">
+          <button
+            type="button"
+            class="shop-page__modal-close"
+            data-bs-dismiss="modal"
+            aria-label="Close product view"
+          >
+            <i class="bi bi-x-lg"></i>
+          </button>
+
+          <div id="shopQuickViewContent"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Floating WhatsApp Button -->
+<a
+    href="https://wa.me/2348000000000"
+    class="site-whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp"
+>
+    <i class="bi bi-whatsapp"></i>
+    <span>Chat with us</span>
+</a>
+
+    <!-- =====================================================
+         BOOTSTRAP JS
+    ====================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- =====================================================
+         SHARED JS
+    ====================================================== -->
+
+    <script src="js/script.js"></script>
+
+    <!-- =====================================================
+         SHOP PAGE JS
+         Small page-specific bridge using the shared
+         script.js product/cart functions.
+    ====================================================== -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const grid = document.getElementById("shopProductGrid");
+
+        const search = document.getElementById("shopSearch");
+
+        const empty = document.getElementById("shopEmptyState");
+
+        const resultText = document.getElementById("shopResultText");
+
+        const productCount = document.getElementById("shopProductCount");
+
+        let activeFilter = "all";
+
+        function renderShopProducts() {
+          if (!grid) {
+            return;
+          }
+
+          const searchTerm = search ? search.value.trim().toLowerCase() : "";
+
+          const filtered = SITE_PRODUCTS.filter((product) => {
+            const matchesFilter =
+              activeFilter === "all" || product.category === activeFilter;
+
+            const searchable = `
+                                    ${product.name}
+                                    ${product.category}
+                                    ${product.length}
+                                    `.toLowerCase();
+
+            const matchesSearch =
+              !searchTerm || searchable.includes(searchTerm);
+
+            return matchesFilter && matchesSearch;
+          });
+
+          grid.innerHTML = "";
+
+          if (productCount) {
+            productCount.textContent = filtered.length;
+          }
+
+          if (resultText) {
+            resultText.textContent =
+              filtered.length === SITE_PRODUCTS.length
+                ? "Showing all styles"
+                : `Showing ${filtered.length} styles`;
+          }
+
+          if (!filtered.length) {
+            if (empty) {
+              empty.classList.remove("d-none");
+            }
+
+            return;
+          }
+
+          if (empty) {
+            empty.classList.add("d-none");
+          }
+
+          filtered.forEach(function (product, index) {
+            const card = document.createElement("article");
+
+            card.className = "shop-page__card";
+
+            card.dataset.productId = product.id;
+
+            card.setAttribute("data-reveal", "");
+
+            card.setAttribute("data-reveal-delay", String(index * 60));
+
+            card.innerHTML = `
+
+                                <div class="shop-page__visual">
+
+
+                                    <img
+                                        class="shop-page__image shop-page__image--primary"
+                                        src="${product.image}"
+                                        alt="${siteEscapeHTML(product.name)}"
+                                        loading="lazy"
+                                    >
+
+
+                                    <img
+                                        class="shop-page__image shop-page__image--secondary"
+                                        src="${product.hoverImage}"
+                                        alt="${siteEscapeHTML(product.name)} alternate view"
+                                        loading="lazy"
+                                    >
+
+
+                                    <span class="shop-page__badge">
+                                        ${siteEscapeHTML(product.badge)}
+                                    </span>
+
+
+                                    <button
+                                        type="button"
+                                        class="shop-page__wishlist"
+                                        data-shop-wishlist="${product.id}"
+                                        aria-label="Add to wishlist"
+                                    >
+
+                                        <i class="bi bi-heart"></i>
+
+                                    </button>
+
+
+                                    <span class="shop-page__hover-indicator">
+
+                                        <i class="bi bi-arrow-left-right"></i>
+
+                                        Explore views
+
+                                    </span>
+
+
+                                    <div class="shop-page__actions">
+
+
+                                        <button
+                                            type="button"
+                                            class="shop-page__quick-view"
+                                            data-shop-quick-view="${product.id}"
+                                        >
+
+                                            Quick View
+
+                                        </button>
+
+
+                                        <button
+                                            type="button"
+                                            class="shop-page__add"
+                                            data-shop-add-cart="${product.id}"
+                                            aria-label="Add to shopping bag"
+                                        >
+
+                                            <i class="bi bi-plus-lg"></i>
+
+                                        </button>
+
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="shop-page__info">
+
+                                    <div>
+
+                                        <div class="shop-page__name">
+
+                                            ${siteEscapeHTML(product.name)}
+
+                                        </div>
+
+
+                                        <div class="shop-page__meta">
+
+                                            ${siteEscapeHTML(product.category)}
+
+                                            ·
+
+                                            ${siteEscapeHTML(product.length)}
+
+                                        </div>
+
+
+                                        <div class="shop-page__price">
+
+                                            ${siteFormatPrice(product.price)}
+
+                                        </div>
+
+
+                                        <a
+                                            href="#"
+                                            class="shop-page__view-link"
+                                            data-shop-quick-view="${product.id}"
+                                        >
+
+                                            Explore piece
+
+                                            <i class="bi bi-arrow-up-right"></i>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            `;
+
+            grid.appendChild(card);
+          });
+
+          /*
+           * Reconnect the shared scroll
+           * reveal observer after creating
+           * the dynamic cards.
+           */
+
+          if (typeof siteObserveRevealElements === "function") {
+            siteObserveRevealElements();
+          }
+        }
+
+        /*
+         * FILTERS
+         */
+
+        document
+          .querySelectorAll("[data-shop-filter]")
+          .forEach(function (button) {
+            button.addEventListener("click", function () {
+              document
+                .querySelectorAll("[data-shop-filter]")
+                .forEach(function (item) {
+                  item.classList.remove("is-active");
+                });
+
+              button.classList.add("is-active");
+
+              activeFilter = button.dataset.shopFilter;
+
+              renderShopProducts();
+            });
+          });
+
+        /*
+         * SEARCH
+         */
+
+        if (search) {
+          search.addEventListener("input", renderShopProducts);
+        }
+
+        /*
+         * RESET
+         */
+
+        const reset = document.getElementById("shopReset");
+
+        if (reset) {
+          reset.addEventListener("click", function () {
+            activeFilter = "all";
+
+            if (search) {
+              search.value = "";
+            }
+
+            document
+              .querySelectorAll("[data-shop-filter]")
+              .forEach(function (button) {
+                button.classList.remove("is-active");
+              });
+
+            const all = document.querySelector('[data-shop-filter="all"]');
+
+            if (all) {
+              all.classList.add("is-active");
+            }
+
+            renderShopProducts();
+          });
+        }
+
+        /*
+         * SEARCH ICON
+         */
+
+        const searchTrigger = document.getElementById("shopSearchTrigger");
+
+        if (searchTrigger) {
+          searchTrigger.addEventListener("click", function () {
+            if (search) {
+              search.focus();
+
+              search.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              });
+            }
+          });
+        }
+
+        /*
+         * SHOP-SPECIFIC PRODUCT ACTIONS
+         */
+
+        document.addEventListener("click", function (event) {
+          const add = event.target.closest("[data-shop-add-cart]");
+
+          if (add) {
+            siteAddToCart(Number(add.dataset.shopAddCart));
+
+            return;
+          }
+
+          const quick = event.target.closest("[data-shop-quick-view]");
+
+          if (quick) {
+            event.preventDefault();
+
+            const product = siteFindProduct(
+              Number(quick.dataset.shopQuickView),
+            );
+
+            if (!product) {
+              return;
+            }
+
+            const content = document.getElementById("shopQuickViewContent");
+
+            if (!content) {
+              return;
+            }
+
+            content.innerHTML = `
+
+                                <div class="shop-page__modal-grid">
+
+
+                                    <div class="shop-page__modal-image">
+
+                                        <img
+                                            src="${product.image}"
+                                            alt="${siteEscapeHTML(product.name)}"
+                                        >
+
+                                    </div>
+
+
+                                    <div class="shop-page__modal-details">
+
+
+                                        <div class="shop-page__modal-category">
+
+                                            ${siteEscapeHTML(product.category)}
+
+                                            ·
+
+                                            ${siteEscapeHTML(product.length)}
+
+                                        </div>
+
+
+                                        <h2 class="shop-page__modal-title">
+
+                                            ${siteEscapeHTML(product.name)}
+
+                                        </h2>
+
+
+                                        <p class="shop-page__modal-description">
+
+                                            ${siteEscapeHTML(
+                                              product.description,
+                                            )}
+
+                                        </p>
+
+
+                                        <div class="shop-page__modal-price">
+
+                                            ${siteFormatPrice(product.price)}
+
+                                        </div>
+
+
+                                        <button
+                                            type="button"
+                                            class="shop-page__modal-add"
+                                            data-shop-modal-add="${product.id}"
+                                        >
+
+                                            Add to shopping bag
+
+                                        </button>
+
+
+                                    </div>
+
+                                </div>
+
+                            `;
+
+            const modal = document.getElementById("shopQuickViewModal");
+
+            if (modal) {
+              bootstrap.Modal.getOrCreateInstance(modal).show();
+            }
+
+            return;
+          }
+
+          const modalAdd = event.target.closest("[data-shop-modal-add]");
+
+          if (modalAdd) {
+            siteAddToCart(Number(modalAdd.dataset.shopModalAdd));
+
+            const modal = document.getElementById("shopQuickViewModal");
+
+            if (modal) {
+              const instance = bootstrap.Modal.getInstance(modal);
+
+              if (instance) {
+                instance.hide();
+              }
+            }
+
+            return;
+          }
+
+          const wishlist = event.target.closest("[data-shop-wishlist]");
+
+          if (wishlist) {
+            wishlist.classList.toggle("is-liked");
+
+            const icon = wishlist.querySelector("i");
+
+            if (icon) {
+              icon.classList.toggle("bi-heart");
+
+              icon.classList.toggle("bi-heart-fill");
+            }
+          }
+        });
+
+        /*
+         * FIRST RENDER
+         */
+
+        renderShopProducts();
+
+        /*
+         * Make sure the shared cart count
+         * is immediately restored.
+         */
+
+        if (typeof siteRefreshCartFromStorage === "function") {
+          siteRefreshCartFromStorage();
+        }
+      });
+    </script>
+  </body>
+</html>

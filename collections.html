@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Explore LUXE Hair collections — straight, body wave, curly and bob styles curated for effortless luxury."
+    />
+
+    <meta name="theme-color" content="#f7f4ef" />
+
+    <title>Collections — LUXE Hair</title>
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+    ====================================================== -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- =====================================================
+         SHARED CSS
+    ====================================================== -->
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="collections-page">
+    <!-- =====================================================
+         ANNOUNCEMENT
+    ====================================================== -->
+
+    <div class="collections-page__announcement">
+      <div class="container">
+        <p class="collections-page__announcement-text">
+          Complimentary delivery on orders above ₦150,000
+
+          <span>·</span>
+
+          WhatsApp concierge available
+        </p>
+      </div>
+    </div>
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="site-header">
+      <div class="container">
+        <nav class="site-navbar navbar navbar-expand-lg">
+          <!-- BRAND -->
+
+          <a href="index.html" class="site-brand" aria-label="LUXE Hair home">
+            <span class="site-brand__main"> LUXE </span>
+
+            <span class="site-brand__sub"> HAIR </span>
+
+            <small class="site-brand__caption"> Luxury wigs · Lagos </small>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="site-navbar__toggle navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collectionsNavigation"
+            aria-controls="collectionsNavigation"
+            aria-expanded="false"
+            aria-label="Open navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+
+          <!-- NAVIGATION -->
+
+          <div class="collapse navbar-collapse" id="collectionsNavigation">
+            <ul class="site-navbar__links navbar-nav mx-auto">
+              <li class="nav-item">
+                <a href="shop.html" class="site-navbar__link"> Shop </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="collections.html"
+                  class="site-navbar__link collections-page__nav-link--active"
+                >
+                  Collections
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="best-sellers.html" class="site-navbar__link">
+                  Best Sellers
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="story.html" class="site-navbar__link"> Our Story </a>
+              </li>
+            </ul>
+
+            <!-- ACTIONS -->
+
+            <div class="site-navbar__actions">
+              <button
+                type="button"
+                class="site-navbar__icon"
+                id="collectionsSearchTrigger"
+                aria-label="Search"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+
+              <button
+                type="button"
+                class="site-navbar__icon"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#cartDrawer"
+                aria-label="Open shopping bag"
+              >
+                <i class="bi bi-bag"></i>
+
+                <span id="siteCartCount" class="site-navbar__cart-count">
+                  0
+                </span>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+      <!-- =================================================
+             HERO
+        ================================================== -->
+
+      <section class="collections-page__hero">
+        <div class="collections-page__hero-media">
+          <img
+            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=2200&q=90"
+            alt="Luxury hair collection"
+          />
+        </div>
+
+        <div class="collections-page__hero-overlay"></div>
+
+        <div class="container">
+          <div class="collections-page__hero-content" data-reveal>
+            <span class="collections-page__eyebrow">
+              THE LUXE COLLECTIONS
+            </span>
+
+            <h1 class="collections-page__title">
+              A texture for every
+              <em>version of you.</em>
+            </h1>
+
+            <p class="collections-page__description">
+              Discover carefully selected textures, silhouettes and lengths
+              designed to complement every mood, occasion and expression of
+              personal style.
+            </p>
+
+            <div class="collections-page__hero-actions">
+              <a href="shop.html" class="home-button home-button--light">
+                Explore all hair
+
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+
+              <a href="#collectionsEdits" class="collections-page__hero-link">
+                Explore collections
+
+                <i class="bi bi-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="collections-page__hero-bottom">
+          <span> Curated textures </span>
+
+          <span> Refined silhouettes </span>
+
+          <span> Effortless luxury </span>
+        </div>
+      </section>
+
+      <!-- =================================================
+             INTRO
+        ================================================== -->
+
+      <section class="collections-page__intro">
+        <div class="container">
+          <div class="collections-page__intro-grid" data-reveal>
+            <div class="collections-page__intro-number">01</div>
+
+            <div class="collections-page__intro-content">
+              <span class="home-kicker"> FIND YOUR SIGNATURE </span>
+
+              <h2>
+                The right texture can
+                <em>change everything.</em>
+              </h2>
+
+              <p>
+                We believe choosing hair should feel personal. That's why each
+                LUXE collection is built around a distinct aesthetic — from
+                polished and understated to soft, romantic or effortlessly bold.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             COLLECTIONS
+        ================================================== -->
+
+      <section class="collections-page__edits" id="collectionsEdits">
+        <div class="container-fluid px-lg-4">
+          <!-- SECTION HEADING -->
+
+          <div class="collections-page__heading" data-reveal>
+            <div>
+              <span class="home-kicker"> THE LUXE EDITS </span>
+
+              <h2>Choose your mood.</h2>
+            </div>
+
+            <span class="collections-page__heading-count">
+              04 collections
+            </span>
+          </div>
+
+          <!-- COLLECTION GRID -->
+
+          <div class="collections-page__grid">
+            <!-- =====================================
+                         STRAIGHT
+                    ====================================== -->
+
+            <a
+              href="shop.html?style=straight"
+              class="collections-page__card collections-page__card--large"
+              data-reveal
+            >
+              <div class="collections-page__card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1600&q=90"
+                  alt="Straight hair collection"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="collections-page__card-shade"></div>
+
+              <div class="collections-page__card-number">01</div>
+
+              <div class="collections-page__card-arrow">
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+
+              <div class="collections-page__card-content">
+                <span> THE POLISHED EDIT </span>
+
+                <h3>Silk Straight</h3>
+
+                <p>Sleek lines. High shine. Quiet confidence.</p>
+              </div>
+            </a>
+
+            <!-- =====================================
+                         BODY WAVE
+                    ====================================== -->
+
+            <a
+              href="shop.html?style=bodywave"
+              class="collections-page__card"
+              data-reveal
+              data-reveal-delay="100"
+            >
+              <div class="collections-page__card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=90"
+                  alt="Body wave hair collection"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="collections-page__card-shade"></div>
+
+              <div class="collections-page__card-number">02</div>
+
+              <div class="collections-page__card-arrow">
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+
+              <div class="collections-page__card-content">
+                <span> THE SOFT EDIT </span>
+
+                <h3>Body Wave</h3>
+
+                <p>Movement, bounce and effortless volume.</p>
+              </div>
+            </a>
+
+            <!-- =====================================
+                         CURLY
+                    ====================================== -->
+
+            <a
+              href="shop.html?style=curly"
+              class="collections-page__card"
+              data-reveal
+              data-reveal-delay="160"
+            >
+              <div class="collections-page__card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=1400&q=90"
+                  alt="Curly hair collection"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="collections-page__card-shade"></div>
+
+              <div class="collections-page__card-number">03</div>
+
+              <div class="collections-page__card-arrow">
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+
+              <div class="collections-page__card-content">
+                <span> THE STATEMENT EDIT </span>
+
+                <h3>Soft Curl</h3>
+
+                <p>Full. Romantic. Beautifully expressive.</p>
+              </div>
+            </a>
+
+            <!-- =====================================
+                         BOB
+                    ====================================== -->
+
+            <a
+              href="shop.html?style=bob"
+              class="collections-page__card collections-page__card--large"
+              data-reveal
+              data-reveal-delay="220"
+            >
+              <div class="collections-page__card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1600&q=90"
+                  alt="Bob hair collection"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="collections-page__card-shade"></div>
+
+              <div class="collections-page__card-number">04</div>
+
+              <div class="collections-page__card-arrow">
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+
+              <div class="collections-page__card-content">
+                <span> THE ICON EDIT </span>
+
+                <h3>The Bob</h3>
+
+                <p>Sharp silhouettes. Modern attitude.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             EDITORIAL
+        ================================================== -->
+
+      <section class="collections-page__editorial">
+        <div class="collections-page__editorial-image">
+          <img
+            src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=2200&q=90"
+            alt="Luxury hair editorial"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="collections-page__editorial-overlay"></div>
+
+        <div class="container">
+          <div class="collections-page__editorial-content" data-reveal>
+            <span class="collections-page__editorial-kicker">
+              THE ART OF CHOICE
+            </span>
+
+            <h2>
+              Your look can change.
+              <em>Your confidence doesn't have to.</em>
+            </h2>
+
+            <p>Change the texture. Change the mood. Keep the confidence.</p>
+
+            <a href="shop.html" class="home-button home-button--light">
+              Browse the shop
+
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             MOST LOVED
+        ================================================== -->
+
+      <section class="collections-page__loved" id="collectionsBestSellers">
+        <div class="container">
+          <div class="collections-page__heading" data-reveal>
+            <div>
+              <span class="home-kicker"> MOST LOVED </span>
+
+              <h2>Pieces worth coming back for.</h2>
+            </div>
+
+            <a href="shop.html" class="home-arrow-link">
+              Shop all
+
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+
+          <div class="collections-page__loved-grid">
+            <!-- ITEM 1 -->
+
+            <a
+              href="shop.html?style=straight"
+              class="collections-page__loved-card"
+              data-reveal
+            >
+              <div class="collections-page__loved-image">
+                <img
+                  src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1100&q=90"
+                  alt="Silk Straight"
+                  loading="lazy"
+                />
+
+                <span> Bestseller </span>
+              </div>
+
+              <div class="collections-page__loved-info">
+                <div>
+                  <strong> Silk Straight </strong>
+
+                  <small> 24" · Natural Black </small>
+                </div>
+
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+            </a>
+
+            <!-- ITEM 2 -->
+
+            <a
+              href="shop.html?style=bodywave"
+              class="collections-page__loved-card"
+              data-reveal
+              data-reveal-delay="90"
+            >
+              <div class="collections-page__loved-image">
+                <img
+                  src="https://images.unsplash.com/photo-1500840216050-6ffa99d75160?auto=format&fit=crop&w=1100&q=90"
+                  alt="Muse Body Wave"
+                  loading="lazy"
+                />
+
+                <span> New </span>
+              </div>
+
+              <div class="collections-page__loved-info">
+                <div>
+                  <strong> Muse Body Wave </strong>
+
+                  <small> 26" · Natural Black </small>
+                </div>
+
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+            </a>
+
+            <!-- ITEM 3 -->
+
+            <a
+              href="shop.html?style=curly"
+              class="collections-page__loved-card"
+              data-reveal
+              data-reveal-delay="160"
+            >
+              <div class="collections-page__loved-image">
+                <img
+                  src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1100&q=90"
+                  alt="Cloud Curl"
+                  loading="lazy"
+                />
+
+                <span> Popular </span>
+              </div>
+
+              <div class="collections-page__loved-info">
+                <div>
+                  <strong> Cloud Curl </strong>
+
+                  <small> 22" · Soft Brown </small>
+                </div>
+
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             CTA
+        ================================================== -->
+
+      <section class="collections-page__cta">
+        <div class="container">
+          <div class="collections-page__cta-inner" data-reveal>
+            <span class="home-kicker"> NEED A LITTLE GUIDANCE? </span>
+
+            <h2>
+              Tell us the look.
+              <em>We'll help find the hair.</em>
+            </h2>
+
+            <p>
+              Not sure which texture or length is right for you? Speak directly
+              with our WhatsApp concierge.
+            </p>
+
+            <a
+              href="https://wa.me/2348000000000"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="home-button home-button--dark"
+            >
+              <i class="bi bi-whatsapp"></i>
+
+              Talk to a stylist
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__top">
+          <div class="site-footer__brand">
+            <a href="index.html" class="site-brand site-brand--footer">
+              <span class="site-brand__main"> LUXE </span>
+
+              <span class="site-brand__sub"> HAIR </span>
+
+              <small class="site-brand__caption"> Luxury wigs · Lagos </small>
+            </a>
+
+            <p>
+              Beautiful hair.<br />
+              Beautifully selected.
+            </p>
+          </div>
+
+          <div class="site-footer__links">
+            <a href="shop.html"> Shop </a>
+
+            <a href="collections.html"> Collections </a>
+
+            <a href="best-sellers.html"> Best Sellers </a>
+
+            <a href="story.html"> Our Story </a>
+          </div>
+
+          <div class="site-footer__contact">
+            <span> Concierge </span>
+
+            <a
+              href="https://wa.me/2348000000000"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bi bi-whatsapp"></i>
+
+              WhatsApp us
+            </a>
+          </div>
+        </div>
+
+        <div class="site-footer__bottom">
+          <span> © 2026 LUXE Hair. All rights reserved. </span>
+
+          <span> Crafted for confidence. </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+         CART DRAWER
+    ====================================================== -->
+
+    <div
+    class="offcanvas offcanvas-end site-cart"
+    tabindex="-1"
+    id="siteCartDrawer"
+      <div class="site-cart__header">
+        <div>
+          <span class="site-cart__eyebrow"> YOUR SELECTION </span>
+
+          <h2 id="collectionsCartTitle">Shopping Bag</h2>
+        </div>
+
+        <button
+          type="button"
+          class="site-cart__close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close shopping bag"
+        >
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <div class="site-cart__body">
+        <div
+    id="siteCartItems"
+    class="site-cart__items"
+></div>
+      </div>
+
+      <div
+    id="siteCartFooter"
+    class="site-cart__footer"
+></div>
+    </div>
+<!-- Floating WhatsApp Button -->
+<a
+    href="https://wa.me/2348000000000"
+    class="site-whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp"
+>
+    <i class="bi bi-whatsapp"></i>
+    <span>Chat with us</span>
+</a>
+    <!-- =====================================================
+         BOOTSTRAP JS
+    ====================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- =====================================================
+         SHARED SCRIPT
+    ====================================================== -->
+
+    <script src="js/script.js"></script>
+
+    <!-- =====================================================
+         COLLECTIONS PAGE SEARCH
+    ====================================================== -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchButton = document.getElementById(
+          "collectionsSearchTrigger",
+        );
+
+        if (searchButton) {
+          searchButton.addEventListener("click", function () {
+            window.location.href = "shop.html";
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

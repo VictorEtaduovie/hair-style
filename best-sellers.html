@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Discover the best-selling wigs at LUXE Hair — the styles our customers love most."
+    />
+
+    <meta name="theme-color" content="#f7f4ef" />
+
+    <title>Best Sellers — LUXE Hair</title>
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+    ====================================================== -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- =====================================================
+         SHARED CSS
+    ====================================================== -->
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="best-sellers-page">
+    <!-- =====================================================
+         ANNOUNCEMENT
+    ====================================================== -->
+
+    <div class="best-sellers-page__announcement">
+      <div class="container">
+        <p class="best-sellers-page__announcement-text">
+          Complimentary delivery on orders above ₦150,000
+
+          <span>·</span>
+
+          WhatsApp concierge available
+        </p>
+      </div>
+    </div>
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="site-header">
+      <div class="container">
+        <nav class="site-navbar navbar navbar-expand-lg">
+          <!-- BRAND -->
+
+          <a href="index.html" class="site-brand" aria-label="LUXE Hair home">
+            <span class="site-brand__main"> LUXE </span>
+
+            <span class="site-brand__sub"> HAIR </span>
+
+            <small class="site-brand__caption"> Luxury wigs · Lagos </small>
+          </a>
+
+          <!-- MOBILE BUTTON -->
+
+          <button
+            class="site-navbar__toggle navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#bestSellersNavigation"
+            aria-controls="bestSellersNavigation"
+            aria-expanded="false"
+            aria-label="Open navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+
+          <!-- NAVIGATION -->
+
+          <div class="collapse navbar-collapse" id="bestSellersNavigation">
+            <ul class="site-navbar__links navbar-nav mx-auto">
+              <li class="nav-item">
+                <a href="shop.html" class="site-navbar__link"> Shop </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="collections.html" class="site-navbar__link">
+                  Collections
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="best-sellers.html"
+                  class="site-navbar__link best-sellers-page__nav-link--active"
+                >
+                  Best Sellers
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="story.html" class="site-navbar__link"> Our Story </a>
+              </li>
+            </ul>
+
+            <!-- ACTIONS -->
+
+            <div class="site-navbar__actions">
+              <button
+                type="button"
+                class="site-navbar__icon"
+                id="bestSellersSearchTrigger"
+                aria-label="Search"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+
+              <button
+                type="button"
+                class="site-navbar__icon"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#siteCartDrawer"
+                aria-label="Open shopping bag"
+              >
+                <i class="bi bi-bag"></i>
+
+                <span id="siteCartCount" class="site-navbar__cart-count">
+                  0
+                </span>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="best-sellers-page__hero">
+      <div class="best-sellers-page__hero-media">
+        <img
+          src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=2200&q=90"
+          alt="LUXE Hair best sellers"
+        />
+      </div>
+
+      <div class="best-sellers-page__hero-overlay"></div>
+
+      <div class="container">
+        <div class="best-sellers-page__hero-content" data-reveal>
+          <span class="best-sellers-page__eyebrow"> MOST LOVED </span>
+
+          <h1 class="best-sellers-page__title">
+            The styles everyone
+            <em>keeps coming back for.</em>
+          </h1>
+
+          <p class="best-sellers-page__description">
+            Our most requested textures, silhouettes and lengths — selected by
+            the women who shop LUXE again and again.
+          </p>
+
+          <a href="#bestSellersProducts" class="home-button home-button--light">
+            Shop the best
+
+            <i class="bi bi-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="best-sellers-page__hero-note">
+        <span> Loved by our customers </span>
+
+        <span> Updated selection </span>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         INTRO
+    ====================================================== -->
+
+    <section class="best-sellers-page__intro">
+      <div class="container">
+        <div class="best-sellers-page__intro-grid" data-reveal>
+          <div class="best-sellers-page__intro-number">01</div>
+
+          <div class="best-sellers-page__intro-content">
+            <span class="home-kicker"> THE CUSTOMER EDIT </span>
+
+            <h2>
+              The hair women
+              <em>choose again.</em>
+            </h2>
+
+            <p>
+              From sleek statement lengths to soft, flowing waves, these are the
+              pieces that consistently earn attention. Consider this your
+              shortcut to the LUXE favourites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         BEST SELLER PRODUCTS
+    ====================================================== -->
+
+    <section class="best-sellers-page__products" id="bestSellersProducts">
+      <div class="container">
+        <div class="best-sellers-page__heading" data-reveal>
+          <div>
+            <span class="home-kicker"> THE TOP EDIT </span>
+
+            <h2>Most wanted.</h2>
+          </div>
+
+          <span class="best-sellers-page__heading-note">
+            Handpicked favourites
+          </span>
+        </div>
+
+        <div class="best-sellers-page__grid" id="bestSellersProductGrid"></div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         FEATURE BANNER
+    ====================================================== -->
+
+    <section class="best-sellers-page__banner">
+      <div class="best-sellers-page__banner-image">
+        <img
+          src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=2200&q=90"
+          alt="LUXE Hair signature style"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="best-sellers-page__banner-overlay"></div>
+
+      <div class="container">
+        <div class="best-sellers-page__banner-content" data-reveal>
+          <span class="best-sellers-page__banner-kicker">
+            THE ONE THEY NOTICE
+          </span>
+
+          <h2>
+            Good hair gets compliments.
+            <em>Great hair gets remembered.</em>
+          </h2>
+
+          <p>
+            Discover the pieces that have become signatures for our LUXE women.
+          </p>
+
+          <a href="shop.html" class="home-button home-button--light">
+            Explore all styles
+
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         WHY THEY LOVE IT
+    ====================================================== -->
+
+    <section class="best-sellers-page__reasons">
+      <div class="container">
+        <div class="best-sellers-page__heading" data-reveal>
+          <div>
+            <span class="home-kicker"> WHY THEY RETURN </span>
+
+            <h2>The LUXE difference.</h2>
+          </div>
+        </div>
+
+        <div class="best-sellers-page__reason-grid">
+          <article class="best-sellers-page__reason" data-reveal>
+            <span> 01 </span>
+
+            <i class="bi bi-stars"></i>
+
+            <h3>Beautiful texture</h3>
+
+            <p>
+              Selected for softness, movement, density and a natural finish.
+            </p>
+          </article>
+
+          <article
+            class="best-sellers-page__reason"
+            data-reveal
+            data-reveal-delay="100"
+          >
+            <span> 02 </span>
+
+            <i class="bi bi-heart"></i>
+
+            <h3>Easy to wear</h3>
+
+            <p>
+              Timeless silhouettes designed to look polished without feeling
+              forced.
+            </p>
+          </article>
+
+          <article
+            class="best-sellers-page__reason"
+            data-reveal
+            data-reveal-delay="200"
+          >
+            <span> 03 </span>
+
+            <i class="bi bi-chat-heart"></i>
+
+            <h3>Personal guidance</h3>
+
+            <p>
+              Need help deciding? Our WhatsApp concierge is always close by.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CTA
+    ====================================================== -->
+
+    <section class="best-sellers-page__cta">
+      <div class="container">
+        <div class="best-sellers-page__cta-inner" data-reveal>
+          <span class="home-kicker"> STILL DECIDING? </span>
+
+          <h2>
+            Start with what
+            <em>everyone loves.</em>
+          </h2>
+
+          <p>
+            Explore the full collection or speak directly with us on WhatsApp.
+          </p>
+
+          <div class="best-sellers-page__cta-actions">
+            <a href="shop.html" class="home-button home-button--dark">
+              Shop all
+
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+
+            <a
+              href="https://wa.me/2348000000000"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="best-sellers-page__whatsapp"
+            >
+              <i class="bi bi-whatsapp"></i>
+
+              Chat with a stylist
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__top">
+          <div class="site-footer__brand">
+            <a href="index.html" class="site-brand site-brand--footer">
+              <span class="site-brand__main"> LUXE </span>
+
+              <span class="site-brand__sub"> HAIR </span>
+
+              <small class="site-brand__caption"> Luxury wigs · Lagos </small>
+            </a>
+
+            <p>
+              Beautiful hair.<br />
+              Beautifully selected.
+            </p>
+          </div>
+
+          <div class="site-footer__links">
+            <a href="shop.html"> Shop </a>
+
+            <a href="collections.html"> Collections </a>
+
+            <a href="best-sellers.html"> Best Sellers </a>
+
+            <a href="story.html"> Our Story </a>
+          </div>
+
+          <div class="site-footer__contact">
+            <span> Concierge </span>
+
+            <a
+              href="https://wa.me/2348000000000"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bi bi-whatsapp"></i>
+
+              WhatsApp us
+            </a>
+          </div>
+        </div>
+
+        <div class="site-footer__bottom">
+          <span> © 2026 LUXE Hair. All rights reserved. </span>
+
+          <span> Crafted for confidence. </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+         SHARED CART
+    ====================================================== -->
+
+    <div
+      class="offcanvas offcanvas-end site-cart"
+      tabindex="-1"
+      id="siteCartDrawer"
+      aria-labelledby="bestSellersCartTitle"
+    >
+      <div class="site-cart__header">
+        <div>
+          <span class="site-cart__eyebrow"> YOUR SELECTION </span>
+
+          <h2 id="bestSellersCartTitle">Shopping Bag</h2>
+        </div>
+
+        <button
+          type="button"
+          class="site-cart__close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close shopping bag"
+        >
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <div class="site-cart__body">
+        <div id="siteCartEmpty" class="site-cart__empty">
+          <div class="site-cart__empty-icon">
+            <i class="bi bi-bag"></i>
+          </div>
+
+          <h3>Your bag is empty</h3>
+
+          <p>Add something beautiful to your selection.</p>
+
+          <a
+            href="shop.html"
+            class="home-button home-button--dark"
+            data-bs-dismiss="offcanvas"
+          >
+            Explore the shop
+          </a>
+        </div>
+
+        <div id="siteCartItems" class="site-cart__items"></div>
+      </div>
+
+      <div id="siteCartFooter" class="site-cart__footer"></div>
+    </div>
+
+    <!-- =====================================================
+         QUICK VIEW
+    ====================================================== -->
+
+    <div
+      class="modal fade"
+      id="bestSellersQuickViewModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content best-sellers-page__modal">
+          <button
+            type="button"
+            class="best-sellers-page__modal-close"
+            data-bs-dismiss="modal"
+            aria-label="Close product view"
+          >
+            <i class="bi bi-x-lg"></i>
+          </button>
+
+          <div id="bestSellersQuickViewContent"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Floating WhatsApp Button -->
+<a
+    href="https://wa.me/2348000000000"
+    class="site-whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp"
+>
+    <i class="bi bi-whatsapp"></i>
+    <span>Chat with us</span>
+</a>
+
+    <!-- =====================================================
+         BOOTSTRAP JS
+    ====================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- =====================================================
+         SHARED JS
+    ====================================================== -->
+
+    <script src="js/script.js"></script>
+
+    <!-- =====================================================
+         BEST SELLERS PAGE JS
+    ====================================================== -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const grid = document.getElementById("bestSellersProductGrid");
+
+        /*
+         * For now, use the products marked as
+         * popular/bestsellers in the shared data.
+         *
+         * If a product is not explicitly marked,
+         * the first four products act as fallback.
+         */
+
+        if (!grid) {
+          return;
+        }
+
+        let bestSellerProducts = SITE_PRODUCTS.filter(function (product) {
+          return product.badge === "Bestseller" || product.badge === "Popular";
+        });
+
+        if (bestSellerProducts.length < 4) {
+          const fallback = SITE_PRODUCTS.filter(function (product) {
+            return !bestSellerProducts.some((item) => item.id === product.id);
+          });
+
+          bestSellerProducts = bestSellerProducts.concat(
+            fallback.slice(0, 4 - bestSellerProducts.length),
+          );
+        }
+
+        bestSellerProducts = bestSellerProducts.slice(0, 4);
+
+        grid.innerHTML = bestSellerProducts
+          .map(function (product, index) {
+            return `
+
+                                    <article
+                                        class="best-sellers-page__card"
+                                        data-reveal
+                                        data-reveal-delay="${index * 80}"
+                                    >
+
+
+                                        <div class="best-sellers-page__visual">
+
+
+                                            <img
+                                                class="best-sellers-page__image best-sellers-page__image--primary"
+                                                src="${product.image}"
+                                                alt="${siteEscapeHTML(product.name)}"
+                                                loading="lazy"
+                                            >
+
+
+                                            <img
+                                                class="best-sellers-page__image best-sellers-page__image--secondary"
+                                                src="${product.hoverImage}"
+                                                alt="${siteEscapeHTML(product.name)} alternate view"
+                                                loading="lazy"
+                                            >
+
+
+                                            <span class="best-sellers-page__rank">
+
+                                                #${index + 1}
+
+                                            </span>
+
+
+                                            <span class="best-sellers-page__badge">
+
+                                                ${siteEscapeHTML(product.badge)}
+
+                                            </span>
+
+
+                                            <button
+                                                type="button"
+                                                class="best-sellers-page__wishlist"
+                                                aria-label="Add to wishlist"
+                                            >
+
+                                                <i class="bi bi-heart"></i>
+
+                                            </button>
+
+
+                                            <span class="best-sellers-page__hover-label">
+
+                                                Explore
+
+                                            </span>
+
+
+                                            <div class="best-sellers-page__actions">
+
+                                                <button
+                                                    type="button"
+                                                    class="best-sellers-page__quick-view"
+                                                    data-best-quick-view="${product.id}"
+                                                >
+
+                                                    Quick View
+
+                                                </button>
+
+
+                                                <button
+                                                    type="button"
+                                                    class="best-sellers-page__add"
+                                                    data-best-add-cart="${product.id}"
+                                                    aria-label="Add to cart"
+                                                >
+
+                                                    <i class="bi bi-plus-lg"></i>
+
+                                                </button>
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="best-sellers-page__info">
+
+                                            <div>
+
+                                                <h3>
+
+                                                    ${siteEscapeHTML(
+                                                      product.name,
+                                                    )}
+
+                                                </h3>
+
+
+                                                <p>
+
+                                                    ${siteEscapeHTML(
+                                                      product.category,
+                                                    )}
+
+                                                    ·
+
+                                                    ${siteEscapeHTML(
+                                                      product.length,
+                                                    )}
+
+                                                </p>
+
+
+                                                <strong>
+
+                                                    ${siteFormatPrice(
+                                                      product.price,
+                                                    )}
+
+                                                </strong>
+
+                                            </div>
+
+
+                                            <span class="best-sellers-page__rank-word">
+
+                                                TOP PICK
+
+                                            </span>
+
+                                        </div>
+
+                                    </article>
+
+                                `;
+          })
+          .join("");
+
+        /*
+         * RECONNECT REVEAL OBSERVER
+         */
+
+        if (typeof siteObserveRevealElements === "function") {
+          siteObserveRevealElements();
+        }
+
+        /*
+         * QUICK VIEW
+         */
+
+        document.addEventListener("click", function (event) {
+          const addButton = event.target.closest("[data-best-add-cart]");
+
+          if (addButton) {
+            siteAddToCart(Number(addButton.dataset.bestAddCart));
+
+            return;
+          }
+
+          const wishlist = event.target.closest(".best-sellers-page__wishlist");
+
+          if (wishlist) {
+            wishlist.classList.toggle("is-liked");
+
+            const icon = wishlist.querySelector("i");
+
+            if (icon) {
+              icon.classList.toggle("bi-heart");
+
+              icon.classList.toggle("bi-heart-fill");
+            }
+
+            return;
+          }
+
+          const quickButton = event.target.closest("[data-best-quick-view]");
+
+          if (!quickButton) {
+            return;
+          }
+
+          const product = siteFindProduct(
+            Number(quickButton.dataset.bestQuickView),
+          );
+
+          if (!product) {
+            return;
+          }
+
+          const content = document.getElementById(
+            "bestSellersQuickViewContent",
+          );
+
+          if (!content) {
+            return;
+          }
+
+          content.innerHTML = `
+
+                            <div class="best-sellers-page__modal-grid">
+
+
+                                <div class="best-sellers-page__modal-image">
+
+                                    <img
+                                        src="${product.image}"
+                                        alt="${siteEscapeHTML(product.name)}"
+                                    >
+
+                                </div>
+
+
+                                <div class="best-sellers-page__modal-details">
+
+                                    <span class="best-sellers-page__modal-category">
+
+                                        ${siteEscapeHTML(product.category)}
+
+                                        ·
+
+                                        ${siteEscapeHTML(product.length)}
+
+                                    </span>
+
+
+                                    <h2 class="best-sellers-page__modal-title">
+
+                                        ${siteEscapeHTML(product.name)}
+
+                                    </h2>
+
+
+                                    <p class="best-sellers-page__modal-description">
+
+                                        ${siteEscapeHTML(product.description)}
+
+                                    </p>
+
+
+                                    <div class="best-sellers-page__modal-price">
+
+                                        ${siteFormatPrice(product.price)}
+
+                                    </div>
+
+
+                                    <button
+                                        type="button"
+                                        class="best-sellers-page__modal-add"
+                                        data-best-modal-add="${product.id}"
+                                    >
+
+                                        Add to shopping bag
+
+                                    </button>
+
+                                </div>
+
+
+                            </div>
+
+                        `;
+
+          const modal = document.getElementById("bestSellersQuickViewModal");
+
+          if (modal) {
+            bootstrap.Modal.getOrCreateInstance(modal).show();
+          }
+        });
+
+        /*
+         * MODAL ADD TO CART
+         */
+
+        document.addEventListener("click", function (event) {
+          const button = event.target.closest("[data-best-modal-add]");
+
+          if (!button) {
+            return;
+          }
+
+          siteAddToCart(Number(button.dataset.bestModalAdd));
+
+          const modal = document.getElementById("bestSellersQuickViewModal");
+
+          if (modal) {
+            const instance = bootstrap.Modal.getInstance(modal);
+
+            if (instance) {
+              instance.hide();
+            }
+          }
+        });
+
+        /*
+         * SEARCH
+         */
+
+        const search = document.getElementById("bestSellersSearchTrigger");
+
+        if (search) {
+          search.addEventListener("click", function () {
+            window.location.href = "shop.html";
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
