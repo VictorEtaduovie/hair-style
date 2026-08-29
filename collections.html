@@ -142,7 +142,8 @@
                 type="button"
                 class="site-navbar__icon"
                 data-bs-toggle="offcanvas"
-                data-bs-target="#cartDrawer"
+                data-bs-target="#siteCartDrawer"
+                aria-controls="siteCartDrawer"
                 aria-label="Open shopping bag"
               >
                 <i class="bi bi-bag"></i>
@@ -163,15 +164,12 @@
 
     <main>
       <!-- =================================================
-             HERO
-        ================================================== -->
+           HERO
+      ================================================== -->
 
       <section class="collections-page__hero">
         <div class="collections-page__hero-media">
-          <img
-            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=2200&q=90"
-            alt="Luxury hair collection"
-          />
+          <img src="images/hero-1.jpg" alt="Luxury hair collection" />
         </div>
 
         <div class="collections-page__hero-overlay"></div>
@@ -219,8 +217,8 @@
       </section>
 
       <!-- =================================================
-             INTRO
-        ================================================== -->
+           INTRO
+      ================================================== -->
 
       <section class="collections-page__intro">
         <div class="container">
@@ -246,8 +244,8 @@
       </section>
 
       <!-- =================================================
-             COLLECTIONS
-        ================================================== -->
+           COLLECTIONS
+      ================================================== -->
 
       <section class="collections-page__edits" id="collectionsEdits">
         <div class="container-fluid px-lg-4">
@@ -269,8 +267,8 @@
 
           <div class="collections-page__grid">
             <!-- =====================================
-                         STRAIGHT
-                    ====================================== -->
+                 STRAIGHT
+            ====================================== -->
 
             <a
               href="shop.html?style=straight"
@@ -279,7 +277,7 @@
             >
               <div class="collections-page__card-image">
                 <img
-                  src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1600&q=90"
+                  src="images/hair-32.webp"
                   alt="Straight hair collection"
                   loading="lazy"
                 />
@@ -303,8 +301,8 @@
             </a>
 
             <!-- =====================================
-                         BODY WAVE
-                    ====================================== -->
+                 BODY WAVE
+            ====================================== -->
 
             <a
               href="shop.html?style=bodywave"
@@ -314,7 +312,7 @@
             >
               <div class="collections-page__card-image">
                 <img
-                  src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=90"
+                  src="images/hair-33.webp"
                   alt="Body wave hair collection"
                   loading="lazy"
                 />
@@ -338,8 +336,8 @@
             </a>
 
             <!-- =====================================
-                         CURLY
-                    ====================================== -->
+                 CURLY
+            ====================================== -->
 
             <a
               href="shop.html?style=curly"
@@ -349,7 +347,7 @@
             >
               <div class="collections-page__card-image">
                 <img
-                  src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=1400&q=90"
+                  src="images/hair-34.webp"
                   alt="Curly hair collection"
                   loading="lazy"
                 />
@@ -373,8 +371,8 @@
             </a>
 
             <!-- =====================================
-                         BOB
-                    ====================================== -->
+                 BOB
+            ====================================== -->
 
             <a
               href="shop.html?style=bob"
@@ -384,7 +382,7 @@
             >
               <div class="collections-page__card-image">
                 <img
-                  src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1600&q=90"
+                  src="images/hair-35.webp"
                   alt="Bob hair collection"
                   loading="lazy"
                 />
@@ -411,13 +409,13 @@
       </section>
 
       <!-- =================================================
-             EDITORIAL
-        ================================================== -->
+           EDITORIAL
+      ================================================== -->
 
       <section class="collections-page__editorial">
         <div class="collections-page__editorial-image">
           <img
-            src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=2200&q=90"
+            src="images/hair-39.webp"
             alt="Luxury hair editorial"
             loading="lazy"
           />
@@ -448,8 +446,8 @@
       </section>
 
       <!-- =================================================
-             MOST LOVED
-        ================================================== -->
+           MOST LOVED
+      ================================================== -->
 
       <section class="collections-page__loved" id="collectionsBestSellers">
         <div class="container">
@@ -477,7 +475,7 @@
             >
               <div class="collections-page__loved-image">
                 <img
-                  src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1100&q=90"
+                  src="images/hair-36.webp"
                   alt="Silk Straight"
                   loading="lazy"
                 />
@@ -506,7 +504,7 @@
             >
               <div class="collections-page__loved-image">
                 <img
-                  src="https://images.unsplash.com/photo-1500840216050-6ffa99d75160?auto=format&fit=crop&w=1100&q=90"
+                  src="images/hair-37.webp"
                   alt="Muse Body Wave"
                   loading="lazy"
                 />
@@ -535,7 +533,7 @@
             >
               <div class="collections-page__loved-image">
                 <img
-                  src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1100&q=90"
+                  src="images/hair-38.webp"
                   alt="Cloud Curl"
                   loading="lazy"
                 />
@@ -558,8 +556,8 @@
       </section>
 
       <!-- =================================================
-             CTA
-        ================================================== -->
+           CTA
+      ================================================== -->
 
       <section class="collections-page__cta">
         <div class="container">
@@ -651,9 +649,11 @@
     ====================================================== -->
 
     <div
-    class="offcanvas offcanvas-end site-cart"
-    tabindex="-1"
-    id="siteCartDrawer"
+      class="offcanvas offcanvas-end site-cart"
+      tabindex="-1"
+      id="siteCartDrawer"
+      aria-labelledby="collectionsCartTitle"
+    >
       <div class="site-cart__header">
         <div>
           <span class="site-cart__eyebrow"> YOUR SELECTION </span>
@@ -672,28 +672,32 @@
       </div>
 
       <div class="site-cart__body">
-        <div
-    id="siteCartItems"
-    class="site-cart__items"
-></div>
+        <div id="siteCartEmpty" class="site-cart__empty" style="display: none">
+          <p>Your shopping bag is empty.</p>
+        </div>
+
+        <div id="siteCartItems" class="site-cart__items"></div>
       </div>
 
-      <div
-    id="siteCartFooter"
-    class="site-cart__footer"
-></div>
+      <div id="siteCartFooter" class="site-cart__footer"></div>
     </div>
-<!-- Floating WhatsApp Button -->
-<a
-    href="https://wa.me/2348000000000"
-    class="site-whatsapp-float"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Chat with us on WhatsApp"
->
-    <i class="bi bi-whatsapp"></i>
-    <span>Chat with us</span>
-</a>
+
+    <!-- =====================================================
+         FLOATING WHATSAPP BUTTON
+    ====================================================== -->
+
+    <a
+      href="https://wa.me/2348000000000"
+      class="site-whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat with us on WhatsApp"
+    >
+      <i class="bi bi-whatsapp"></i>
+
+      <span> Chat with us </span>
+    </a>
+
     <!-- =====================================================
          BOOTSTRAP JS
     ====================================================== -->

@@ -38,10 +38,8 @@ const SITE_PRODUCTS = [
     length: "20 inches",
     price: 185000,
     badge: "Signature",
-    image:
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=88",
-    hoverImage:
-      "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1200&q=88",
+    image: "images/hair-one.webp",
+    hoverImage: "images/hair-two.webp",
     description:
       "A sleek, polished straight texture with a soft natural finish and effortless movement.",
   },
@@ -54,10 +52,8 @@ const SITE_PRODUCTS = [
     length: "22 inches",
     price: 210000,
     badge: "Bestseller",
-    image:
-      "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=88",
-    hoverImage:
-      "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=1200&q=88",
+    image: "images/hair-three.webp",
+    hoverImage: "images/hair-four.webp",
     description:
       "Soft flowing waves designed for volume, elegance and an effortlessly glamorous finish.",
   },
@@ -70,10 +66,8 @@ const SITE_PRODUCTS = [
     length: "12 inches",
     price: 145000,
     badge: "New",
-    image:
-      "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1200&q=88",
-    hoverImage:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=88",
+    image: "images/hair-five.webp",
+    hoverImage: "images/hair-six.webp",
     description:
       "A refined bob with a clean silhouette for a timeless and confident everyday look.",
   },
@@ -86,10 +80,8 @@ const SITE_PRODUCTS = [
     length: "20 inches",
     price: 195000,
     badge: "Popular",
-    image:
-      "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=1200&q=88",
-    hoverImage:
-      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=88",
+    image: "images/hair-seven.webp",
+    hoverImage: "images/hair-eight.webp",
     description:
       "Defined curls with soft dimension and a rich luxurious finish.",
   },
@@ -102,10 +94,8 @@ const SITE_PRODUCTS = [
     length: "24 inches",
     price: 245000,
     badge: "Premium",
-    image:
-      "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1200&q=88",
-    hoverImage:
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=88",
+    image: "images/hair-nine.webp",
+    hoverImage: "images/hair-ten.webp",
     description:
       "Long, ultra-sleek strands with a smooth glossy finish made for statement looks.",
   },
@@ -118,10 +108,8 @@ const SITE_PRODUCTS = [
     length: "20 inches",
     price: 205000,
     badge: "Popular",
-    image:
-      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=88",
-    hoverImage:
-      "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=88",
+    image: "images/hair-eleven.webp",
+    hoverImage: "images/hair-twelve.webp",
     description:
       "Full-bodied waves with movement, bounce and a sophisticated silhouette.",
   },
@@ -134,10 +122,8 @@ const SITE_PRODUCTS = [
     length: "18 inches",
     price: 180000,
     badge: "New",
-    image:
-      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=88",
-    hoverImage:
-      "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=1200&q=88",
+    image: "images/hair-thirteen.webp",
+    hoverImage: "images/hair-fourteen.webp",
     description:
       "Soft, voluminous curls designed for a romantic and effortlessly feminine finish.",
   },
@@ -150,10 +136,8 @@ const SITE_PRODUCTS = [
     length: "10 inches",
     price: 135000,
     badge: "Limited",
-    image:
-      "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=1200&q=88",
-    hoverImage:
-      "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1200&q=88",
+    image: "images/hair-fifteen.webp",
+    hoverImage: "images/hair-sixteen.webp",
     description:
       "A sophisticated short style inspired by Parisian simplicity and modern elegance.",
   },
@@ -166,10 +150,8 @@ const SITE_PRODUCTS = [
     length: "26 inches",
     price: 275000,
     badge: "Luxury",
-    image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=88",
-    hoverImage:
-      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=88",
+    image: "images/hair-seventeen.webp",
+    hoverImage: "images/hair-eighteen.webp",
     description:
       "Extra-long silky strands for a dramatic, elegant and effortlessly luxurious appearance.",
   },
@@ -182,10 +164,8 @@ const SITE_PRODUCTS = [
     length: "24 inches",
     price: 235000,
     badge: "Trending",
-    image:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=88",
-    hoverImage:
-      "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=88",
+    image: "images/hair-nineteen.webp",
+    hoverImage: "images/hair-twenty.webp",
     description:
       "Rich, soft waves with luxurious volume and a naturally flowing finish.",
   },
@@ -198,10 +178,8 @@ const SITE_PRODUCTS = [
     length: "22 inches",
     price: 215000,
     badge: "Hot Pick",
-    image:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=88",
-    hoverImage:
-      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=88",
+    image: "images/hair-twenty-one.webp",
+    hoverImage: "images/hair-twenty-two.webp",
     description:
       "Luxuriously textured curls with beautiful fullness and natural-looking movement.",
   },
@@ -214,10 +192,8 @@ const SITE_PRODUCTS = [
     length: "14 inches",
     price: 155000,
     badge: "Editor's Pick",
-    image:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=88",
-    hoverImage:
-      "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1200&q=88",
+    image: "images/hair-twenty-three.webp",
+    hoverImage: "images/hair-twenty-four.webp",
     description:
       "A polished modern bob with a sophisticated shape and an elevated finish.",
   },
@@ -230,10 +206,8 @@ const SITE_PRODUCTS = [
     length: "18 inches",
     price: 165000,
     badge: "Everyday",
-    image:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=88",
-    hoverImage:
-      "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1200&q=88",
+    image: "images/hair-twenty-five.webp",
+    hoverImage: "images/hair-twenty-six.webp",
     description:
       "A refined straight style designed for effortless everyday elegance.",
   },
@@ -246,10 +220,8 @@ const SITE_PRODUCTS = [
     length: "26 inches",
     price: 265000,
     badge: "Iconic",
-    image:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=88",
-    hoverImage:
-      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=88",
+    image: "images/hair-twenty-seven.webp",
+    hoverImage: "images/hair-twenty-eight.webp",
     description:
       "Long, luxurious body waves with dramatic movement and effortless glamour.",
   },
@@ -262,10 +234,8 @@ const SITE_PRODUCTS = [
     length: "24 inches",
     price: 225000,
     badge: "Statement",
-    image:
-      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1200&q=88",
-    hoverImage:
-      "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=1200&q=88",
+    image: "images/hair-twenty-nine.webp",
+    hoverImage: "images/hair-thirty.webp",
     description:
       "Expressive, voluminous curls created for a bold and memorable silhouette.",
   },
@@ -278,12 +248,64 @@ const SITE_PRODUCTS = [
     length: "8 inches",
     price: 125000,
     badge: "New",
-    image:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=88",
-    hoverImage:
-      "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1200&q=88",
+    image: "images/hair-31.webp",
+    hoverImage: "images/hair-32.webp",
     description:
       "A chic, compact bob with a clean shape and contemporary luxury feel.",
+  },
+
+  {
+    id: 17,
+    name: "Luxe Wave",
+    category: "Body Wave",
+    slug: "body-wave",
+    length: "22 inches",
+    price: 220000,
+    badge: "New",
+    image: "images/hair-33.webp",
+    hoverImage: "images/hair-34.webp",
+    description: "Beautiful flowing waves with a soft, luxurious finish.",
+  },
+
+  {
+    id: 18,
+    name: "Royal Curl",
+    category: "Curly",
+    slug: "curly",
+    length: "24 inches",
+    price: 230000,
+    badge: "Premium",
+    image: "images/hair-35.webp",
+    hoverImage: "images/hair-36.webp",
+    description:
+      "Full, defined curls with an elegant and luxurious appearance.",
+  },
+
+  {
+    id: 19,
+    name: "Signature Straight",
+    category: "Straight",
+    slug: "straight",
+    length: "26 inches",
+    price: 280000,
+    badge: "Luxury",
+    image: "images/hair-37.webp",
+    hoverImage: "images/hair-38.webp",
+    description: "Ultra-sleek straight hair with a polished premium finish.",
+  },
+
+  {
+    id: 20,
+    name: "Luxe Bob",
+    category: "Bob",
+    slug: "bob",
+    length: "12 inches",
+    price: 150000,
+    badge: "New",
+    image: "images/hair-39.webp",
+    hoverImage: "images/hair-31.webp",
+    description:
+      "A sophisticated bob designed for a clean, modern and effortless look.",
   },
 ];
 
