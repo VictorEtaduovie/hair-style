@@ -21,7 +21,7 @@
    01. CONFIGURATION
 ========================================================= */
 
-const SITE_WHATSAPP_NUMBER = "2348000000000";
+const SITE_WHATSAPP_NUMBER = "2348023144805";
 
 const SITE_CART_STORAGE_KEY = "luxeHairCart";
 
