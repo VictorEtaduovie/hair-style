@@ -1,1436 +1,792 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta
-        name="description"
-        content="LUXE Hair — premium wigs and luxury hair curated for effortless confidence."
-    >
+      name="description"
+      content="LUXE Hair — premium wigs and luxury hair curated for effortless confidence."
+    />
 
-    <meta
-        name="theme-color"
-        content="#f7f4ef"
-    >
+    <meta name="theme-color" content="#f7f4ef" />
 
     <title>LUXE Hair — Luxury Wigs</title>
 
-
     <!-- =====================================================
-         GOOGLE FONTS
+         FONTS
     ====================================================== -->
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
-        rel="stylesheet"
-    >
-
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- =====================================================
          BOOTSTRAP
     ====================================================== -->
 
     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
-
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- =====================================================
          BOOTSTRAP ICONS
     ====================================================== -->
 
     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-        rel="stylesheet"
-    >
-
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
 
     <!-- =====================================================
          MAIN CSS
     ====================================================== -->
 
-    <link
-        rel="stylesheet"
-        href="css/style.css"
-    >
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
-
-
-<body class="home-page">
-
-
+  <body class="home-page">
     <!-- =====================================================
          ANNOUNCEMENT BAR
     ====================================================== -->
 
     <div class="home-announcement">
+      <div class="container">
+        <p class="home-announcement__text">
+          Complimentary delivery on orders above ₦150,000
 
-        <div class="container">
+          <span class="home-announcement__separator"> · </span>
 
-            <p class="home-announcement__text">
-
-                Complimentary delivery on orders above ₦150,000
-
-                <span class="home-announcement__separator">
-                    ·
-                </span>
-
-                WhatsApp concierge available
-
-            </p>
-
-        </div>
-
+          WhatsApp concierge available
+        </p>
+      </div>
     </div>
-
-
 
     <!-- =====================================================
          NAVBAR
     ====================================================== -->
 
     <header class="site-header">
+      <div class="container">
+        <nav class="site-navbar navbar navbar-expand-lg">
+          <!-- BRAND -->
 
-        <div class="container">
+          <a href="index.html" class="site-brand" aria-label="LUXE Hair Home">
+            <span class="site-brand__main"> LUXE </span>
 
-            <nav class="site-navbar navbar navbar-expand-lg">
+            <span class="site-brand__sub"> HAIR </span>
 
+            <small class="site-brand__caption"> Luxury wigs · Lagos </small>
+          </a>
 
-                <!-- BRAND -->
+          <!-- MOBILE MENU -->
 
-                <a
-                    href="index.html"
-                    class="site-brand"
-                    aria-label="LUXE Hair Home"
-                >
+          <button
+            class="site-navbar__toggle navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#siteMainNavigation"
+            aria-controls="siteMainNavigation"
+            aria-expanded="false"
+            aria-label="Open navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
 
-                    <span class="site-brand__main">
-                        LUXE
-                    </span>
+          <!-- NAVIGATION -->
 
-                    <span class="site-brand__sub">
-                        HAIR
-                    </span>
+          <div class="collapse navbar-collapse" id="siteMainNavigation">
+            <ul class="site-navbar__links navbar-nav mx-auto">
+              <li class="nav-item">
+                <a href="shop.html" class="site-navbar__link"> Shop </a>
+              </li>
 
-                    <small class="site-brand__caption">
-                        Luxury wigs · Lagos
-                    </small>
-
+              <li class="nav-item">
+                <a href="collections.html" class="site-navbar__link">
+                  Collections
                 </a>
+              </li>
 
+              <li class="nav-item">
+                <a href="best-sellers.html" class="site-navbar__link">
+                  Best Sellers
+                </a>
+              </li>
 
-                <!-- MOBILE MENU -->
+              <li class="nav-item">
+                <a href="story.html" class="site-navbar__link"> Our Story </a>
+              </li>
+            </ul>
 
-                <button
-                    class="site-navbar__toggle navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#siteMainNavigation"
-                    aria-controls="siteMainNavigation"
-                    aria-expanded="false"
-                    aria-label="Open navigation"
-                >
+            <!-- NAV ACTIONS -->
 
-                    <i class="bi bi-list"></i>
+            <div class="site-navbar__actions">
+              <button
+                type="button"
+                class="site-navbar__icon"
+                id="homeSearchTrigger"
+                aria-label="Search"
+              >
+                <i class="bi bi-search"></i>
+              </button>
 
-                </button>
+              <button
+                type="button"
+                class="site-navbar__icon"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#siteCartDrawer"
+                aria-controls="siteCartDrawer"
+                aria-label="Open shopping bag"
+              >
+                <i class="bi bi-bag"></i>
 
-
-                <!-- NAVIGATION -->
-
-                <div
-                    class="collapse navbar-collapse"
-                    id="siteMainNavigation"
-                >
-
-                    <ul class="site-navbar__links navbar-nav mx-auto">
-
-
-                        <li class="nav-item">
-
-                            <a
-                                href="shop.html"
-                                class="site-navbar__link"
-                            >
-
-                                Shop
-
-                            </a>
-
-                        </li>
-
-
-                        <li class="nav-item">
-
-                            <a
-                                href="collections.html"
-                                class="site-navbar__link"
-                            >
-
-                                Collections
-
-                            </a>
-
-                        </li>
-
-
-                        <li class="nav-item">
-
-                            <a
-                                href="best-sellers.html"
-                                class="site-navbar__link"
-                            >
-
-                                Best Sellers
-
-                            </a>
-
-                        </li>
-
-
-                        <li class="nav-item">
-
-                            <a
-                                href="story.html"
-                                class="site-navbar__link"
-                            >
-
-                                Our Story
-
-                            </a>
-
-                        </li>
-
-
-                    </ul>
-
-
-                    <!-- NAV ACTIONS -->
-
-                    <div class="site-navbar__actions">
-
-
-                        <button
-                            type="button"
-                            class="site-navbar__icon"
-                            id="homeSearchTrigger"
-                            aria-label="Search"
-                        >
-
-                            <i class="bi bi-search"></i>
-
-                        </button>
-
-
-                        <button
-                            type="button"
-                            class="site-navbar__icon"
-                            data-bs-toggle="offcanvas"
-                            data-bs-target="#siteCartDrawer"
-                            aria-label="Open shopping bag"
-                        >
-
-                            <i class="bi bi-bag"></i>
-
-                            <span
-                                class="site-navbar__cart-count"
-                                id="siteCartCount"
-                            >
-                                0
-                            </span>
-
-                        </button>
-
-
-                    </div>
-
-                </div>
-
-            </nav>
-
-        </div>
-
+                <span class="site-navbar__cart-count" id="siteCartCount">
+                  0
+                </span>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
-
-
 
     <!-- =====================================================
          MAIN
     ====================================================== -->
 
     <main>
-
-
-        <!-- =================================================
+      <!-- =================================================
              HERO SLIDER
         ================================================== -->
 
-        <section class="home-hero-slider">
+      <section class="home-hero-slider">
+        <div class="home-hero-slider__background">
+          <!-- IMAGE IS CONTROLLED BY script.js -->
 
+          <div class="home-hero-slider__slide-image" id="homeHeroImage"></div>
 
-            <!-- BACKGROUND -->
+          <div class="home-hero-slider__overlay"></div>
+        </div>
 
-            <div class="home-hero-slider__background">
+        <div class="container position-relative">
+          <!-- HERO CONTENT -->
 
-                <div
-                    class="home-hero-slider__slide-image"
-                    id="homeHeroImage"
-                ></div>
-
-                <div class="home-hero-slider__overlay"></div>
-
+          <div class="home-hero-slider__content" id="homeHeroContent">
+            <div class="home-hero-slider__eyebrow" id="homeHeroEyebrow">
+              THE LUXE EDIT
             </div>
 
+            <h1 class="home-hero-slider__title" id="homeHeroTitle">
+              Hair that makes
+              <em>an entrance.</em>
+            </h1>
 
-            <!-- HERO CONTENT -->
+            <p class="home-hero-slider__description" id="homeHeroDescription">
+              Refined textures. Effortless movement. Beautifully selected wigs
+              for the woman who knows exactly how she wants to feel.
+            </p>
 
-            <div class="container">
+            <div class="home-hero-slider__actions">
+              <a href="shop.html" class="home-button home-button--light">
+                Explore the collection
 
-                <div class="home-hero-slider__content">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
 
+              <a href="#homeFeatured" class="home-hero-slider__text-link">
+                Discover the edit
 
-                    <div
-                        class="home-hero-slider__eyebrow"
-                        id="homeHeroEyebrow"
-                    >
+                <i class="bi bi-arrow-down"></i>
+              </a>
+            </div>
+          </div>
 
-                        THE LUXE EDIT
+          <!-- COUNTER -->
 
-                    </div>
+          <div class="home-hero-slider__counter">
+            <span id="homeHeroCurrent"> 01 </span>
 
+            <span class="home-hero-slider__counter-line"></span>
 
-                    <h1
-                        class="home-hero-slider__title"
-                        id="homeHeroTitle"
-                    >
+            <span id="homeHeroTotal"> 04 </span>
+          </div>
 
-                        Hair that makes
-                        <em>an entrance.</em>
+          <!-- CONTROLS -->
 
-                    </h1>
+          <div class="home-hero-slider__controls">
+            <button type="button" id="homeHeroPrev" aria-label="Previous slide">
+              <i class="bi bi-arrow-left"></i>
+            </button>
 
+            <button type="button" id="homeHeroNext" aria-label="Next slide">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
 
-                    <p
-                        class="home-hero-slider__description"
-                        id="homeHeroDescription"
-                    >
+          <!-- SCROLL -->
 
-                        Refined textures. Effortless movement.
-                        Beautifully selected wigs for the woman
-                        who knows exactly how she wants to feel.
+          <div class="home-hero-slider__scroll">
+            <span></span>
 
-                    </p>
+            <small> Scroll to explore </small>
+          </div>
+        </div>
+      </section>
+      <!-- =================================================
+     QUICK SHOP
+================================================== -->
 
+      <section class="home-quick-shop">
+        <div class="container">
+          <div class="home-section-heading" data-reveal>
+            <div>
+              <span class="home-kicker"> SHOP DIRECTLY </span>
 
-                    <div class="home-hero-slider__actions">
-
-
-                        <a
-                            href="shop.html"
-                            class="home-button home-button--light"
-                        >
-
-                            Explore the collection
-
-                            <i class="bi bi-arrow-up-right"></i>
-
-                        </a>
-
-
-                        <a
-                            href="#homeFeatured"
-                            class="home-hero-slider__text-link"
-                        >
-
-                            Discover the edit
-
-                            <i class="bi bi-arrow-down"></i>
-
-                        </a>
-
-
-                    </div>
-
-                </div>
-
-
-                <!-- HERO COUNTER -->
-
-                <div class="home-hero-slider__counter">
-
-                    <span id="homeHeroCurrent">
-                        01
-                    </span>
-
-                    <span class="home-hero-slider__counter-line"></span>
-
-                    <span>
-                        <span id="homeHeroTotal">
-                            04
-                        </span>
-                    </span>
-
-                </div>
-
-
-                <!-- HERO CONTROLS -->
-
-                <div class="home-hero-slider__controls">
-
-                    <button
-                        type="button"
-                        id="homeHeroPrev"
-                        aria-label="Previous slide"
-                    >
-
-                        <i class="bi bi-arrow-left"></i>
-
-                    </button>
-
-
-                    <button
-                        type="button"
-                        id="homeHeroNext"
-                        aria-label="Next slide"
-                    >
-
-                        <i class="bi bi-arrow-right"></i>
-
-                    </button>
-
-                </div>
-
-
-                <!-- HERO SCROLL -->
-
-                <div class="home-hero-slider__scroll">
-
-                    <span></span>
-
-                    <small>
-                        Scroll to explore
-                    </small>
-
-                </div>
-
+              <h2 class="home-section-title">Find your next favourite.</h2>
             </div>
 
-        </section>
+            <a href="shop.html" class="home-arrow-link">
+              View all wigs
 
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
 
+          <!--
+            Products are inserted here
+            automatically from SITE_PRODUCTS.
+        -->
 
-        <!-- =================================================
-             BRAND INTRO
+          <div class="home-product-grid" id="homeProductGrid"></div>
+
+          <div class="home-quick-shop__bottom" data-reveal>
+            <a href="shop.html" class="home-button home-button--dark">
+              Shop all wigs
+
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             INTRO
         ================================================== -->
 
-        <section class="home-intro home-section">
+      <section class="home-intro home-section">
+        <div class="container">
+          <div class="home-intro__grid" data-reveal>
+            <div class="home-intro__label">
+              <span> 01 </span>
 
-            <div class="container">
-
-                <div
-                    class="home-intro__grid"
-                    data-reveal
-                >
-
-
-                    <div class="home-intro__label">
-
-                        <span>
-                            01
-                        </span>
-
-                        <span>
-                            The LUXE standard
-                        </span>
-
-                    </div>
-
-
-                    <div class="home-intro__copy">
-
-                        <h2 class="home-display">
-
-                            Not just a wig.
-                            <em>Your signature.</em>
-
-                        </h2>
-
-
-                        <p>
-
-                            We believe beautiful hair should feel effortless.
-                            Our collection brings together timeless silhouettes,
-                            luxurious textures and carefully selected pieces
-                            designed to become part of your identity.
-
-                        </p>
-
-
-                        <a
-                            href="story.html"
-                            class="home-arrow-link"
-                        >
-
-                            Our story
-
-                            <i class="bi bi-arrow-up-right"></i>
-
-                        </a>
-
-                    </div>
-
-
-                </div>
-
+              <span> The LUXE standard </span>
             </div>
 
-        </section>
+            <div class="home-intro__copy">
+              <h2 class="home-display">
+                Not just a wig.
+                <em>Your signature.</em>
+              </h2>
 
+              <p>
+                We believe beautiful hair should feel effortless. Our collection
+                brings together timeless silhouettes, luxurious textures and
+                carefully selected pieces designed to become part of your
+                identity.
+              </p>
 
+              <a href="story.html" class="home-arrow-link">
+                Our story
 
-        <!-- =================================================
-             COLLECTIONS
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             CATEGORIES
         ================================================== -->
 
-        <section class="home-categories">
-
-            <div class="container-fluid px-lg-4">
-
-
-                <div
-                    class="home-section-heading"
-                    data-reveal
-                >
-
-                    <div>
-
-                        <span class="home-kicker">
-                            SHOP BY MOOD
-                        </span>
-
-                        <h2 class="home-section-title">
-                            Find your texture.
-                        </h2>
-
-                    </div>
-
-
-                    <a
-                        href="collections.html"
-                        class="home-arrow-link"
-                    >
-
-                        View collections
-
-                        <i class="bi bi-arrow-up-right"></i>
-
-                    </a>
-
-                </div>
-
-
-                <div class="row g-3">
-
-
-                    <!-- STRAIGHT -->
-
-                    <div
-                        class="col-lg-4"
-                        data-reveal
-                    >
-
-                        <a
-                            href="shop.html?style=straight"
-                            class="home-category-card"
-                        >
-
-                            <div class="home-category-card__image">
-
-                                <img
-                                    src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1400&q=88"
-                                    alt="Straight hair collection"
-                                    loading="lazy"
-                                >
-
-                            </div>
-
-
-                            <div class="home-category-card__overlay"></div>
-
-
-                            <div class="home-category-card__content">
-
-                                <span>
-                                    01
-                                </span>
-
-                                <h3>
-                                    Silk Straight
-                                </h3>
-
-                                <p>
-                                    Sleek. Polished. Iconic.
-                                </p>
-
-                            </div>
-
-
-                            <div class="home-category-card__arrow">
-
-                                <i class="bi bi-arrow-up-right"></i>
-
-                            </div>
-
-                        </a>
-
-                    </div>
-
-
-
-                    <!-- CURLY -->
-
-                    <div
-                        class="col-lg-4"
-                        data-reveal
-                        data-reveal-delay="100"
-                    >
-
-                        <a
-                            href="shop.html?style=curly"
-                            class="home-category-card"
-                        >
-
-                            <div class="home-category-card__image">
-
-                                <img
-                                    src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=1400&q=88"
-                                    alt="Curly hair collection"
-                                    loading="lazy"
-                                >
-
-                            </div>
-
-
-                            <div class="home-category-card__overlay"></div>
-
-
-                            <div class="home-category-card__content">
-
-                                <span>
-                                    02
-                                </span>
-
-                                <h3>
-                                    Soft Curl
-                                </h3>
-
-                                <p>
-                                    Full. Romantic. Alive.
-                                </p>
-
-                            </div>
-
-
-                            <div class="home-category-card__arrow">
-
-                                <i class="bi bi-arrow-up-right"></i>
-
-                            </div>
-
-                        </a>
-
-                    </div>
-
-
-
-                    <!-- BODY WAVE -->
-
-                    <div
-                        class="col-lg-4"
-                        data-reveal
-                        data-reveal-delay="200"
-                    >
-
-                        <a
-                            href="shop.html?style=body-wave"
-                            class="home-category-card"
-                        >
-
-                            <div class="home-category-card__image">
-
-                                <img
-                                    src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=88"
-                                    alt="Body wave collection"
-                                    loading="lazy"
-                                >
-
-                            </div>
-
-
-                            <div class="home-category-card__overlay"></div>
-
-
-                            <div class="home-category-card__content">
-
-                                <span>
-                                    03
-                                </span>
-
-                                <h3>
-                                    Body Wave
-                                </h3>
-
-                                <p>
-                                    Soft. Fluid. Effortless.
-                                </p>
-
-                            </div>
-
-
-                            <div class="home-category-card__arrow">
-
-                                <i class="bi bi-arrow-up-right"></i>
-
-                            </div>
-
-                        </a>
-
-                    </div>
-
-
-                </div>
-
+      <section class="home-categories">
+        <div class="container-fluid px-lg-4">
+          <div class="home-section-heading" data-reveal>
+            <div>
+              <span class="home-kicker"> SHOP BY MOOD </span>
+
+              <h2 class="home-section-title">Find your texture.</h2>
             </div>
 
-        </section>
+            <a href="collections.html" class="home-arrow-link">
+              View collections
 
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
 
+          <div class="row g-3">
+            <!-- STRAIGHT -->
 
-        <!-- =================================================
-             PIECES EVERYONE WANTS
-        ================================================== -->
-
-        <section
-            class="home-signature"
-            id="homeFeatured"
-        >
-
-            <div class="container">
-
-
-                <div
-                    class="home-section-heading"
-                    data-reveal
-                >
-
-                    <div>
-
-                        <span class="home-kicker">
-                            MOST LOVED
-                        </span>
-
-                        <h2 class="home-section-title">
-                            The pieces everyone wants.
-                        </h2>
-
-                    </div>
-
-
-                    <a
-                        href="best-sellers.html"
-                        class="home-arrow-link"
-                    >
-
-                        View best sellers
-
-                        <i class="bi bi-arrow-up-right"></i>
-
-                    </a>
-
-                </div>
-
-
-
-                <!-- ROTATING PRODUCTS -->
-
-                <div
-                    class="home-signature__grid"
-                    id="homeSignatureGrid"
-                ></div>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             EDITORIAL BREAK
-        ================================================== -->
-
-        <section class="home-editorial">
-
-            <div class="home-editorial__image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=1900&q=90"
-                    alt="Luxury hair editorial"
+            <div class="col-lg-4" data-reveal>
+              <a href="shop.html?style=straight" class="home-category-card">
+                <div class="home-category-card__image">
+                  <img
+                    src="images/hair-five.webp"
+                    alt="Straight hair collection"
                     loading="lazy"
-                >
-
-            </div>
-
-
-            <div class="home-editorial__overlay"></div>
-
-
-            <div class="container">
-
-                <div
-                    class="home-editorial__content"
-                    data-reveal
-                >
-
-                    <span class="home-kicker home-kicker--light">
-
-                        THE ART OF LOOKING EFFORTLESS
-
-                    </span>
-
-
-                    <h2>
-
-                        Your hair enters
-                        the room before you do.
-
-                    </h2>
-
-
-                    <a
-                        href="shop.html"
-                        class="home-button home-button--light"
-                    >
-
-                        Shop the edit
-
-                        <i class="bi bi-arrow-up-right"></i>
-
-                    </a>
-
+                  />
                 </div>
 
+                <div class="home-category-card__overlay"></div>
+
+                <div class="home-category-card__content">
+                  <span> 01 </span>
+
+                  <h3>Silk Straight</h3>
+
+                  <p>Sleek. Polished. Iconic.</p>
+                </div>
+
+                <div class="home-category-card__arrow">
+                  <i class="bi bi-arrow-up-right"></i>
+                </div>
+              </a>
             </div>
 
-        </section>
+            <!-- CURLY -->
 
+            <div class="col-lg-4" data-reveal data-reveal-delay="100">
+              <a href="shop.html?style=curly" class="home-category-card">
+                <div class="home-category-card__image">
+                  <img
+                    src="images/hair-six.webp"
+                    alt="Curly hair collection"
+                    loading="lazy"
+                  />
+                </div>
 
+                <div class="home-category-card__overlay"></div>
 
-        <!-- =================================================
-             EXPLORE MORE HAIR
+                <div class="home-category-card__content">
+                  <span> 02 </span>
+
+                  <h3>Soft Curl</h3>
+
+                  <p>Full. Romantic. Alive.</p>
+                </div>
+
+                <div class="home-category-card__arrow">
+                  <i class="bi bi-arrow-up-right"></i>
+                </div>
+              </a>
+            </div>
+
+            <!-- BODY WAVE -->
+
+            <div class="col-lg-4" data-reveal data-reveal-delay="200">
+              <a href="shop.html?style=body-wave" class="home-category-card">
+                <div class="home-category-card__image">
+                  <img
+                    src="images/hair-seven.webp"
+                    alt="Body wave collection"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="home-category-card__overlay"></div>
+
+                <div class="home-category-card__content">
+                  <span> 03 </span>
+
+                  <h3>Body Wave</h3>
+
+                  <p>Soft. Fluid. Effortless.</p>
+                </div>
+
+                <div class="home-category-card__arrow">
+                  <i class="bi bi-arrow-up-right"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             MOST LOVED
         ================================================== -->
 
-        <section class="home-explore">
+      <section class="home-signature" id="homeFeatured">
+        <div class="container">
+          <div class="home-section-heading" data-reveal>
+            <div>
+              <span class="home-kicker"> MOST LOVED </span>
 
-            <div class="container">
-
-
-                <div
-                    class="home-section-heading"
-                    data-reveal
-                >
-
-                    <div>
-
-                        <span class="home-kicker">
-                            KEEP EXPLORING
-                        </span>
-
-                        <h2 class="home-section-title">
-                            More hair to fall for.
-                        </h2>
-
-                    </div>
-
-
-                    <a
-                        href="shop.html"
-                        class="home-arrow-link"
-                    >
-
-                        Shop everything
-
-                        <i class="bi bi-arrow-up-right"></i>
-
-                    </a>
-
-                </div>
-
-
-
-                <div
-                    class="home-explore__grid"
-                    id="homeExploreGrid"
-                ></div>
-
-
+              <h2 class="home-section-title">The pieces everyone wants.</h2>
             </div>
 
-        </section>
+            <a href="best-sellers.html" class="home-arrow-link">
+              View best sellers
 
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
 
+          <!--
+                    These four cards rotate automatically
+                    using the shared JavaScript.
+                -->
 
-        <!-- =================================================
+          <div class="home-signature__grid" id="homeSignatureGrid"></div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             EDITORIAL
+        ================================================== -->
+
+      <section class="home-editorial">
+        <div class="home-editorial__image">
+          <img
+            src="images/hair-39.webp"
+            alt="Luxury hair editorial"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="home-editorial__overlay"></div>
+
+        <div class="container">
+          <div class="home-editorial__content" data-reveal>
+            <span class="home-kicker home-kicker--light">
+              THE ART OF LOOKING EFFORTLESS
+            </span>
+
+            <h2>Your hair enters the room before you do.</h2>
+
+            <a href="shop.html" class="home-button home-button--light">
+              Shop the edit
+
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             MORE HAIR
+        ================================================== -->
+
+      <section class="home-explore">
+        <div class="container">
+          <div class="home-section-heading" data-reveal>
+            <div>
+              <span class="home-kicker"> KEEP EXPLORING </span>
+
+              <h2 class="home-section-title">More hair to fall for.</h2>
+            </div>
+
+            <a href="shop.html" class="home-arrow-link">
+              Shop everything
+
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+
+          <div class="home-explore__grid" id="homeExploreGrid"></div>
+        </div>
+      </section>
+
+      <!-- =================================================
              WHY LUXE
         ================================================== -->
 
-        <section class="home-values home-section">
+      <section class="home-values home-section">
+        <div class="container">
+          <div class="home-section-heading" data-reveal>
+            <div>
+              <span class="home-kicker"> WHY LUXE </span>
 
-            <div class="container">
+              <h2 class="home-section-title">Luxury is in the details.</h2>
+            </div>
+          </div>
 
+          <div class="row g-4">
+            <div class="col-md-4" data-reveal>
+              <article class="home-value">
+                <span class="home-value__number"> 01 </span>
 
-                <div
-                    class="home-section-heading"
-                    data-reveal
-                >
-
-                    <div>
-
-                        <span class="home-kicker">
-                            WHY LUXE
-                        </span>
-
-                        <h2 class="home-section-title">
-                            Luxury is in the details.
-                        </h2>
-
-                    </div>
-
+                <div class="home-value__icon">
+                  <i class="bi bi-stars"></i>
                 </div>
 
+                <h3>Curated quality</h3>
 
-                <div class="row g-4">
-
-
-                    <div
-                        class="col-md-4"
-                        data-reveal
-                    >
-
-                        <article class="home-value">
-
-                            <span class="home-value__number">
-                                01
-                            </span>
-
-
-                            <div class="home-value__icon">
-
-                                <i class="bi bi-stars"></i>
-
-                            </div>
-
-
-                            <h3>
-                                Curated quality
-                            </h3>
-
-
-                            <p>
-                                Every piece is selected for texture,
-                                movement, density and a beautiful
-                                natural finish.
-                            </p>
-
-                        </article>
-
-                    </div>
-
-
-
-                    <div
-                        class="col-md-4"
-                        data-reveal
-                        data-reveal-delay="100"
-                    >
-
-                        <article class="home-value">
-
-                            <span class="home-value__number">
-                                02
-                            </span>
-
-
-                            <div class="home-value__icon">
-
-                                <i class="bi bi-handbag"></i>
-
-                            </div>
-
-
-                            <h3>
-                                Effortless shopping
-                            </h3>
-
-
-                            <p>
-                                Discover your next look, add multiple
-                                pieces to your bag and complete your
-                                order directly through WhatsApp.
-                            </p>
-
-                        </article>
-
-                    </div>
-
-
-
-                    <div
-                        class="col-md-4"
-                        data-reveal
-                        data-reveal-delay="200"
-                    >
-
-                        <article class="home-value">
-
-                            <span class="home-value__number">
-                                03
-                            </span>
-
-
-                            <div class="home-value__icon">
-
-                                <i class="bi bi-chat-heart"></i>
-
-                            </div>
-
-
-                            <h3>
-                                Personal service
-                            </h3>
-
-
-                            <p>
-                                Need help choosing? Our WhatsApp
-                                concierge makes finding the right
-                                style feel personal.
-                            </p>
-
-                        </article>
-
-                    </div>
-
-
-                </div>
-
+                <p>
+                  Every piece is selected for texture, movement, density and a
+                  beautiful natural finish.
+                </p>
+              </article>
             </div>
 
-        </section>
+            <div class="col-md-4" data-reveal data-reveal-delay="100">
+              <article class="home-value">
+                <span class="home-value__number"> 02 </span>
 
+                <div class="home-value__icon">
+                  <i class="bi bi-handbag"></i>
+                </div>
 
+                <h3>Effortless shopping</h3>
 
-        <!-- =================================================
+                <p>
+                  Discover your next look, add multiple pieces to your bag and
+                  complete your order directly through WhatsApp.
+                </p>
+              </article>
+            </div>
+
+            <div class="col-md-4" data-reveal data-reveal-delay="200">
+              <article class="home-value">
+                <span class="home-value__number"> 03 </span>
+
+                <div class="home-value__icon">
+                  <i class="bi bi-chat-heart"></i>
+                </div>
+
+                <h3>Personal service</h3>
+
+                <p>
+                  Need help choosing? Our WhatsApp concierge makes finding the
+                  right style feel personal.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
              TESTIMONIAL
         ================================================== -->
 
-        <section class="home-testimonial home-section">
+      <section class="home-testimonial home-section">
+        <div class="container">
+          <div class="home-testimonial__box" data-reveal>
+            <span class="home-testimonial__quote"> “ </span>
 
-            <div class="container">
+            <blockquote>
+              The moment I put my LUXE wig on, I understood the difference. It
+              looked incredibly natural, felt beautiful and completely changed
+              how I carried myself.
+            </blockquote>
 
-                <div
-                    class="home-testimonial__box"
-                    data-reveal
-                >
+            <div class="home-testimonial__author">
+              <span></span>
 
-                    <span class="home-testimonial__quote">
-                        “
-                    </span>
+              <strong> A luxury customer </strong>
 
-
-                    <blockquote>
-
-                        The moment I put my LUXE wig on,
-                        I understood the difference. It looked
-                        incredibly natural, felt beautiful
-                        and completely changed how I carried myself.
-
-                    </blockquote>
-
-
-                    <div class="home-testimonial__author">
-
-                        <span></span>
-
-                        <strong>
-                            A luxury customer
-                        </strong>
-
-                        <span></span>
-
-                    </div>
-
-                </div>
-
+              <span></span>
             </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
-
-
-
-        <!-- =================================================
-             FINAL CTA
+      <!-- =================================================
+             CTA
         ================================================== -->
 
-        <section class="home-cta">
+      <section class="home-cta">
+        <div class="container">
+          <div class="home-cta__content" data-reveal>
+            <span class="home-kicker"> NEED A LITTLE HELP? </span>
 
-            <div class="container">
+            <h2>Let us help you find your perfect hair.</h2>
 
-                <div
-                    class="home-cta__content"
-                    data-reveal
-                >
+            <p>Tell us the look you're going for and we'll help you choose.</p>
 
-                    <span class="home-kicker">
-                        NEED A LITTLE HELP?
-                    </span>
+            <a
+              href="https://wa.me/2348000000000"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="home-button home-button--dark"
+            >
+              <i class="bi bi-whatsapp"></i>
 
-
-                    <h2>
-                        Let us help you find
-                        your perfect hair.
-                    </h2>
-
-
-                    <p>
-                        Tell us the look you're going for
-                        and we'll help you choose.
-                    </p>
-
-
-                    <a
-                        href="https://wa.me/2348000000000"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="home-button home-button--dark"
-                    >
-
-                        <i class="bi bi-whatsapp"></i>
-
-                        Chat on WhatsApp
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
-
-
 
     <!-- =====================================================
          FOOTER
     ====================================================== -->
 
     <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__top">
+          <div class="site-footer__brand">
+            <a href="index.html" class="site-brand site-brand--footer">
+              <span class="site-brand__main"> LUXE </span>
 
-        <div class="container">
+              <span class="site-brand__sub"> HAIR </span>
 
-            <div class="site-footer__top">
+              <small class="site-brand__caption"> Luxury wigs · Lagos </small>
+            </a>
 
+            <p>
+              Beautiful hair.<br />
+              Beautifully selected.
+            </p>
+          </div>
 
-                <div class="site-footer__brand">
+          <div class="site-footer__links">
+            <a href="shop.html"> Shop </a>
 
-                    <a
-                        href="index.html"
-                        class="site-brand site-brand--footer"
-                    >
+            <a href="collections.html"> Collections </a>
 
-                        <span class="site-brand__main">
-                            LUXE
-                        </span>
+            <a href="best-sellers.html"> Best Sellers </a>
 
-                        <span class="site-brand__sub">
-                            HAIR
-                        </span>
+            <a href="story.html"> Our Story </a>
+          </div>
 
-                        <small class="site-brand__caption">
-                            Luxury wigs · Lagos
-                        </small>
+          <div class="site-footer__contact">
+            <span> Concierge </span>
 
-                    </a>
+            <a
+              href="https://wa.me/2348000000000"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bi bi-whatsapp"></i>
 
-
-                    <p>
-                        Beautiful hair.<br>
-                        Beautifully selected.
-                    </p>
-
-                </div>
-
-
-
-                <div class="site-footer__links">
-
-                    <a href="shop.html">
-                        Shop
-                    </a>
-
-                    <a href="collections.html">
-                        Collections
-                    </a>
-
-                    <a href="best-sellers.html">
-                        Best Sellers
-                    </a>
-
-                    <a href="story.html">
-                        Our Story
-                    </a>
-
-                </div>
-
-
-
-                <div class="site-footer__contact">
-
-                    <span>
-                        Concierge
-                    </span>
-
-
-                    <a
-                        href="https://wa.me/2348000000000"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-
-                        <i class="bi bi-whatsapp"></i>
-
-                        WhatsApp us
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="site-footer__bottom">
-
-                <span>
-                    © 2026 LUXE Hair. All rights reserved.
-                </span>
-
-
-                <span>
-                    Crafted for confidence.
-                </span>
-
-            </div>
-
+              WhatsApp us
+            </a>
+          </div>
         </div>
 
+        <div class="site-footer__bottom">
+          <span> © 2026 LUXE Hair. All rights reserved. </span>
+
+          <span> Crafted for confidence. </span>
+        </div>
+      </div>
     </footer>
 
-
-
     <!-- =====================================================
-         SHARED CART DRAWER
+         SHARED CART
     ====================================================== -->
 
     <div
-        class="offcanvas offcanvas-end site-cart"
-        tabindex="-1"
-        id="siteCartDrawer"
-        aria-labelledby="siteCartTitle"
+      class="offcanvas offcanvas-end site-cart"
+      tabindex="-1"
+      id="siteCartDrawer"
+      aria-labelledby="siteCartTitle"
     >
+      <div class="site-cart__header">
+        <div>
+          <span class="site-cart__eyebrow"> YOUR SELECTION </span>
 
-        <div class="site-cart__header">
-
-            <div>
-
-                <span class="site-cart__eyebrow">
-                    YOUR SELECTION
-                </span>
-
-                <h2 id="siteCartTitle">
-                    Shopping Bag
-                </h2>
-
-            </div>
-
-
-            <button
-                type="button"
-                class="site-cart__close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close shopping bag"
-            >
-
-                <i class="bi bi-x-lg"></i>
-
-            </button>
-
+          <h2 id="siteCartTitle">Shopping Bag</h2>
         </div>
 
+        <button
+          type="button"
+          class="site-cart__close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close shopping bag"
+        >
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
 
-        <div class="site-cart__body">
+      <div class="site-cart__body">
+        <div id="siteCartEmpty" class="site-cart__empty">
+          <div class="site-cart__empty-icon">
+            <i class="bi bi-bag"></i>
+          </div>
 
+          <h3>Your bag is empty</h3>
 
-            <div
-                id="siteCartEmpty"
-                class="site-cart__empty"
-            >
+          <p>Add something beautiful to your selection.</p>
 
-                <div class="site-cart__empty-icon">
-
-                    <i class="bi bi-bag"></i>
-
-                </div>
-
-
-                <h3>
-                    Your bag is empty
-                </h3>
-
-
-                <p>
-                    Add something beautiful to your selection.
-                </p>
-
-
-                <a
-                    href="shop.html"
-                    class="home-button home-button--dark"
-                    data-bs-dismiss="offcanvas"
-                >
-
-                    Explore the shop
-
-                </a>
-
-            </div>
-
-
-            <div
-                id="siteCartItems"
-                class="site-cart__items"
-            ></div>
-
+          <a
+            href="shop.html"
+            class="home-button home-button--dark"
+            data-bs-dismiss="offcanvas"
+          >
+            Explore the shop
+          </a>
         </div>
 
+        <div id="siteCartItems" class="site-cart__items"></div>
+      </div>
 
-        <div
-            id="siteCartFooter"
-            class="site-cart__footer"
-        ></div>
-
+      <div id="siteCartFooter" class="site-cart__footer"></div>
     </div>
 
-
-
     <!-- =====================================================
-         HOME QUICK VIEW
+         QUICK VIEW
     ====================================================== -->
 
     <div
-        class="modal fade"
-        id="homeQuickViewModal"
-        tabindex="-1"
-        aria-hidden="true"
+      class="modal fade"
+      id="homeQuickViewModal"
+      tabindex="-1"
+      aria-hidden="true"
     >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content home-quick-view">
+          <button
+            type="button"
+            class="home-quick-view__close"
+            data-bs-dismiss="modal"
+            aria-label="Close product view"
+          >
+            <i class="bi bi-x-lg"></i>
+          </button>
 
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-
-            <div class="modal-content home-quick-view">
-
-
-                <button
-                    type="button"
-                    class="home-quick-view__close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close product view"
-                >
-
-                    <i class="bi bi-x-lg"></i>
-
-                </button>
-
-
-                <div
-                    id="homeQuickViewContent"
-                    class="home-quick-view__content"
-                ></div>
-
-            </div>
-
+          <div id="homeQuickViewContent" class="home-quick-view__content"></div>
         </div>
-
+      </div>
     </div>
-
-
 
     <!-- =====================================================
          FLOATING WHATSAPP
     ====================================================== -->
 
     <a
-        href="https://wa.me/2348000000000"
-        class="site-whatsapp-float"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Chat with us on WhatsApp"
+      href="https://wa.me/2348000000000"
+      class="site-whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat with us on WhatsApp"
     >
+      <i class="bi bi-whatsapp"></i>
 
-        <i class="bi bi-whatsapp"></i>
-
-        <span>
-            Chat with us
-        </span>
-
+      <span> Chat with us </span>
     </a>
 
-
-
     <!-- =====================================================
-         BOOTSTRAP
+         BOOTSTRAP JS
     ====================================================== -->
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    ></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- =====================================================
          SHARED JS
     ====================================================== -->
 
     <script src="js/script.js"></script>
-
-</body>
-
+  </body>
 </html>

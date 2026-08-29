@@ -308,6 +308,233 @@ const SITE_PRODUCTS = [
       "A sophisticated bob designed for a clean, modern and effortless look.",
   },
 ];
+/* =========================================================
+   HOME HERO SLIDER
+   HOME PAGE ONLY
+========================================================= */
+
+const HOME_HERO_SLIDES = [
+  {
+    eyebrow: "THE LUXE EDIT",
+
+    title: "Hair that makes|an entrance.",
+
+    description:
+      "Refined textures. Effortless movement. Beautifully selected wigs for the woman who knows exactly how she wants to feel.",
+
+    image: "images/hair-one.webp",
+  },
+
+  {
+    eyebrow: "THE POLISHED EDIT",
+
+    title: "Sleek hair.|Quiet confidence.",
+
+    description:
+      "Silky straight textures, beautiful lengths and an immaculate finish made for a signature look.",
+
+    image: "images/hair-two.webp",
+  },
+
+  {
+    eyebrow: "THE SOFT EDIT",
+
+    title: "Make room|for movement.",
+
+    description:
+      "Soft waves with bounce, volume and effortless glamour designed to move beautifully with you.",
+
+    image: "images/hair-three.webp",
+  },
+
+  {
+    eyebrow: "THE STATEMENT EDIT",
+
+    title: "More texture.|More personality.",
+
+    description:
+      "Expressive textures and beautiful silhouettes selected for women who want to be remembered.",
+
+    image: "images/hair-four.webp",
+  },
+];
+
+let HOME_HERO_INDEX = 0;
+let HOME_HERO_TIMER = null;
+
+function homeHeroShowSlide(index) {
+  const slide = HOME_HERO_SLIDES[index];
+
+  const image = document.getElementById("homeHeroImage");
+
+  const eyebrow = document.getElementById("homeHeroEyebrow");
+
+  const title = document.getElementById("homeHeroTitle");
+
+  const description = document.getElementById("homeHeroDescription");
+
+  const current = document.getElementById("homeHeroCurrent");
+
+  if (!image || !eyebrow || !title || !description) {
+    return;
+  }
+
+  /*
+   * Fade the current image out
+   */
+
+  image.classList.add("is-changing");
+
+  setTimeout(() => {
+    /*
+     * Change image
+     */
+
+    image.style.backgroundImage = `url("${slide.image}")`;
+
+    /*
+     * Change text
+     */
+
+    eyebrow.textContent = slide.eyebrow;
+
+    const titleParts = slide.title.split("|");
+
+    if (titleParts.length === 2) {
+      title.innerHTML = `
+
+        ${titleParts[0]}
+
+        <em>
+          ${titleParts[1]}
+        </em>
+
+      `;
+    } else {
+      title.textContent = slide.title;
+    }
+
+    description.textContent = slide.description;
+
+    /*
+     * Update counter
+     */
+
+    if (current) {
+      current.textContent = String(index + 1).padStart(2, "0");
+    }
+
+    /*
+     * Bring new image in
+     */
+
+    image.classList.remove("is-changing");
+  }, 350);
+}
+
+/* =========================================================
+   NEXT SLIDE
+========================================================= */
+
+function homeHeroNext() {
+  HOME_HERO_INDEX = (HOME_HERO_INDEX + 1) % HOME_HERO_SLIDES.length;
+
+  homeHeroShowSlide(HOME_HERO_INDEX);
+}
+
+/* =========================================================
+   PREVIOUS SLIDE
+========================================================= */
+
+function homeHeroPrevious() {
+  HOME_HERO_INDEX =
+    (HOME_HERO_INDEX - 1 + HOME_HERO_SLIDES.length) % HOME_HERO_SLIDES.length;
+
+  homeHeroShowSlide(HOME_HERO_INDEX);
+}
+
+/* =========================================================
+   START AUTO SLIDER
+========================================================= */
+
+function homeHeroStartAutoSlide() {
+  clearInterval(HOME_HERO_TIMER);
+
+  HOME_HERO_TIMER = setInterval(() => {
+    homeHeroNext();
+  }, 5000);
+}
+
+/* =========================================================
+   SETUP HERO
+========================================================= */
+
+function homeHeroSetup() {
+  const hero = document.querySelector(".home-hero-slider");
+
+  const image = document.getElementById("homeHeroImage");
+
+  const nextButton = document.getElementById("homeHeroNext");
+
+  const previousButton = document.getElementById("homeHeroPrev");
+
+  /*
+   * If we're not on the Home page,
+   * do nothing.
+   */
+
+  if (!hero || !image) {
+    return;
+  }
+
+  /*
+   * Preload the hero images
+   */
+
+  HOME_HERO_SLIDES.forEach((slide) => {
+    const preload = new Image();
+
+    preload.src = slide.image;
+  });
+
+  /*
+   * Display first slide
+   */
+
+  HOME_HERO_INDEX = 0;
+
+  image.style.backgroundImage = `url("${HOME_HERO_SLIDES[0].image}")`;
+
+  /*
+   * NEXT
+   */
+
+  if (nextButton) {
+    nextButton.addEventListener("click", () => {
+      homeHeroNext();
+
+      homeHeroStartAutoSlide();
+    });
+  }
+
+  /*
+   * PREVIOUS
+   */
+
+  if (previousButton) {
+    previousButton.addEventListener("click", () => {
+      homeHeroPrevious();
+
+      homeHeroStartAutoSlide();
+    });
+  }
+
+  /*
+   * Start automatic slider
+   */
+
+  homeHeroStartAutoSlide();
+}
 
 /* =========================================================
    03. SHARED CART STATE
@@ -825,22 +1052,39 @@ function homeCreateProductCard(product) {
 function homeRenderProducts() {
   const grid = document.getElementById("homeProductGrid");
 
+  /*
+   * The homepage quick-shop section
+   * does not exist on other pages.
+   */
+
   if (!grid) {
     return;
   }
 
-  grid.innerHTML = SITE_PRODUCTS.slice(0, 4)
-    .map(homeCreateProductCard)
-    .join("");
+  /*
+   * Display 8 products.
+   *
+   * Desktop:
+   * 4 products per row
+   *
+   * Therefore:
+   * 8 products = 2 rows
+   *
+   * Mobile:
+   * 2 products per row
+   */
+
+  const products = SITE_PRODUCTS.slice(0, 8);
+
+  grid.innerHTML = products.map(homeCreateProductCard).join("");
 
   /*
-   * Cards are inserted after DOMContentLoaded,
-   * therefore they need to be observed again.
+   * Activate scroll reveal
+   * for dynamically created cards.
    */
 
   siteObserveRevealElements();
 }
-
 /* =========================================================
    15. QUICK VIEW
 ========================================================= */
@@ -1200,6 +1444,12 @@ document.addEventListener("DOMContentLoaded", () => {
   siteSetupGlobalClicks();
 
   siteObserveRevealElements();
+
+  /*
+   * HOME HERO
+   */
+
+  homeHeroSetup();
 
   /*
    * Home-only initialization
